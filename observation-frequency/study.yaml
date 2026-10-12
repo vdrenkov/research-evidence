@@ -1,0 +1,26 @@
+study_id: observation-frequency
+exchange: binance
+symbols: [BTCUSDT, ETHUSDT, SOLUSDT]
+data_start: '2020-09-01T00:00:00Z'
+data_end: '2025-09-01T00:00:00Z'
+test_start: '2022-09-01T00:00:00Z'
+test_end: '2025-08-31T00:00:00Z'
+train_months: 24
+fold_months: 6
+observation_hours: [1, 4, 24]
+lookback_days: [1, 7, 28]
+models: [logistic_regression, random_forest, xgboost]
+seeds: [17, 42, 73]
+bootstrap_replicates: 5000
+bootstrap_seed: 20261011
+block_days: [7, 14, 28]
+primary_block_days: 14
+policy_thresholds: [0.5, 0.55, 0.6]
+primary_policy_threshold: 0.55
+costs:
+  - {name: zero, commission_bps: 0, slippage_bps: 0}
+  - {name: base, commission_bps: 6, slippage_bps: 5}
+  - {name: stress, commission_bps: 12, slippage_bps: 10}
+primary_cost: base
+cash: 10000
+max_participation: 0.2
