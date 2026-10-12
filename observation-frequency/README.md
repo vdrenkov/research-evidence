@@ -72,8 +72,10 @@ establish real-world capacity. USDT depeg risk is not modeled separately.
 The implementation is maintained in
 [Crypto Backtest Framework](https://github.com/vdrenkov/crypto-backtest-framework).
 For reproduction, use the recorded software revision and dependency environment,
-with clean, committed framework and evidence checkouts. Existing hourly data
-including repair flags is required; PostgreSQL is unnecessary.
+with clean, committed framework and evidence checkouts. Existing monthly hourly
+source partitions including repair flags are required; PostgreSQL is unnecessary.
+The launcher currently reads that partition layout; using the committed normalized
+snapshots for a fresh full run requires preparing the same input layout.
 
 From the framework checkout:
 
@@ -83,6 +85,22 @@ From the framework checkout:
 
 The command prepares inputs, fits models, replays policies and exports analysis.
 Each execution writes a fresh `results/observation-frequency/<run-id>` directory.
+
+### Completed run
+
+[Run `20261012t200333z-25662394`](runs/20261012t200333z-25662394/) completed
+486 fits and 252 policy replays using framework release `v3.1.0`. Its
+`identity.json` records the exact software and dependency environment, input
+hashes and the evidence commit containing the pre-execution design and configuration.
+
+The retained package contains the three input snapshots, forecast checkpoints,
+eligibility calendar and identity/completion manifests, copied unchanged from the
+original run. Checkpoints retain individual predictions and training records for
+verification without refitting. File hashes can be checked against `outputs.json`.
+
+`outputs.json` records hashes for the complete experiment. Excel exports, figures
+and trading traces are retained separately in the framework's
+`results/observation-frequency/<run-id>/` directory.
 
 | Output | Verification purpose |
 | --- | --- |

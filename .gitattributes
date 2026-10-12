@@ -1,0 +1,2 @@
+# Keep hashed run artifacts byte-identical across checkouts.
+*/runs/** -text

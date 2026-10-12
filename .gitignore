@@ -9,3 +9,9 @@ runs/
 *.parquet
 *.xlsx
 *.zip
+
+# Compact verification files for the observation-frequency study.
+!observation-frequency/runs/
+!observation-frequency/runs/*/calendar.parquet
+!observation-frequency/runs/*/inputs/*.parquet
+!observation-frequency/runs/*/checkpoints/*.parquet
