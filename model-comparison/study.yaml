@@ -1,0 +1,218 @@
+schema_version: 1
+status: draft
+study_id: model-comparison
+execution_ready: false
+
+data:
+  exchange: binance
+  symbols: [BTCUSDT, ETHUSDT, SOLUSDT]
+  source_timeframe: 1h
+  start: '2020-09-01T00:00:00Z'
+  end_exclusive: '2025-09-01T00:00:00Z'
+  acquisition: existing_partitions_only
+  repair_policy: exclude_dependent_examples
+  unknown_repair_flags: fail
+  execution_missing_or_synthetic: forbid_fills_and_required_daily_marks
+  other_flagged_intraday_marks: existing_carry_forward_for_accounting_only
+
+forecast:
+  origin_frequency: 1d
+  origin_hour_utc: 0
+  horizon_hours: 24
+  target: next_24h_close_to_close_positive
+  zero_return_class: 0
+  sequence_days: 28
+  required_completed_source_days: 29
+  channels:
+    - log_close_return
+    - log_high_low_range
+    - log_close_open_return
+    - close_location
+    - log1p_volume_change
+  flat_candle_close_location: 0.5
+  sequence_order: oldest_to_newest
+  flatten_order: time_then_channel
+  common_training_endpoints_across_models_and_assets: true
+  common_scoring_dates_across_models_and_assets: true
+  decision_eligibility: past_inputs_only
+  score_eligibility: decision_and_all_asset_targets_observed
+
+validation:
+  test_start: '2022-09-01T00:00:00Z'
+  test_end_exclusive: '2025-08-31T00:00:00Z'
+  train_calendar_months: 24
+  test_fold_calendar_months: 6
+  expected_folds: 6
+  final_fold: truncate_at_declared_test_end
+  selection_validation_calendar_days: 90
+  label_end_rule: strictly_before_next_stage_origin
+  selection_metric: unweighted_log_loss
+  tie_break: earliest_iteration
+  minimum_selection_training_rows: 250
+  minimum_validation_rows: 60
+  minimum_final_training_rows: 350
+  require_both_classes_in_training_and_validation: true
+  final_refit: all_eligible_outer_training_endpoints_from_scratch
+  duration_selection_models:
+    - xgboost_current
+    - xgboost_history
+    - mlp_history
+    - lstm
+    - gru
+    - tcn
+    - transformer
+  scaler:
+    type: per_channel_standard
+    moments: unique_daily_vectors_in_stage_training_sequences
+    constant_channel_scale: 1.0
+    refit_after_duration_selection: true
+
+training:
+  seeds: [17, 42, 73]
+  primary_ensemble: arithmetic_probability_mean
+  class_weighting: none
+  probability_calibration: none
+  device: cpu
+  compute_threads: 1
+  standardized_input_dtype: float32
+  neural_dtype: float32
+  deterministic_algorithms: required
+  failure_policy: stop_and_preserve
+  neural:
+    optimizer: adamw
+    learning_rate: 0.001
+    weight_decay: 0.0001
+    batch_size: 64
+    maximum_epochs: 50
+    early_stopping_patience: 8
+    minimum_improvement: 0.00001
+    gradient_clip_norm: 1.0
+    loss: unweighted_binary_cross_entropy_with_logits
+    shuffle_training_examples: true
+    seed_final_refit_from_scratch: true
+
+models:
+  logistic_history:
+    family: linear
+    input: flattened_history
+    params: {C: 1.0, solver: lbfgs, max_iter: 2000}
+  random_forest_history:
+    family: tree
+    input: flattened_history
+    params: {n_estimators: 300, max_depth: 6, min_samples_leaf: 10, n_jobs: 1}
+  xgboost_current:
+    family: tree
+    input: current_vector
+    params: {n_estimators: 250, max_depth: 3, learning_rate: 0.05, subsample: 0.8, colsample_bytree: 0.8, reg_lambda: 1.0, n_jobs: 1}
+    early_stopping_rounds: 20
+  xgboost_history:
+    family: tree
+    input: flattened_history
+    params: {n_estimators: 250, max_depth: 3, learning_rate: 0.05, subsample: 0.8, colsample_bytree: 0.8, reg_lambda: 1.0, n_jobs: 1}
+    early_stopping_rounds: 20
+  mlp_history:
+    family: neural_control
+    input: flattened_history
+    params: {hidden_sizes: [64, 32], activation: gelu, dropout: 0.1}
+  lstm:
+    family: sequence
+    input: sequence
+    params: {hidden_size: 32, num_layers: 1, output_dropout: 0.1}
+  gru:
+    family: sequence
+    input: sequence
+    params: {hidden_size: 32, num_layers: 1, output_dropout: 0.1}
+  tcn:
+    family: sequence
+    input: sequence
+    params: {channels: 32, kernel_size: 3, dilations: [1, 2, 4, 8], convolutions_per_level: 2, dropout: 0.1, pooling: last, padding: causal_left}
+  transformer:
+    family: sequence
+    input: sequence
+    params: {d_model: 32, nhead: 4, num_layers: 1, dim_feedforward: 64, dropout: 0.1, activation: gelu, positional_encoding: sinusoidal, pooling: last}
+
+references:
+  probability_models: [constant_half, training_up_rate]
+  trading_models: [buy_and_hold]
+
+analysis:
+  primary_metric: brier_loss
+  aggregation: equal_asset_mean_then_common_scoring_date_mean
+  primary_contrasts:
+    - [lstm, xgboost_history]
+    - [gru, xgboost_history]
+    - [tcn, xgboost_history]
+    - [transformer, xgboost_history]
+    - [lstm, mlp_history]
+    - [gru, mlp_history]
+    - [tcn, mlp_history]
+    - [transformer, mlp_history]
+    - [xgboost_history, xgboost_current]
+  contrast_direction: first_minus_second
+  family_error_rate: 0.05
+  family_adjustment: bonferroni
+  bootstrap:
+    type: synchronized_circular_calendar_blocks_within_folds
+    interval_method: percentile
+    replicates: 50000
+    seed: 20261016
+    block_days: [7, 14, 28]
+    primary_block_days: 14
+    synchronize_assets_models_and_contrasts: true
+    gap_handling: sample_calendar_then_apply_shared_score_mask
+    statistic: pooled_valid_date_mean
+    empty_draw_policy: reject_and_resample
+    refit_models: false
+  secondary_metrics: [log_loss, roc_auc, accuracy, reliability, brier_skill, compute_cost]
+  probability_clip_for_log_loss: 0.0000001
+  reliability_bins: 10
+  accuracy_threshold: 0.5
+  secondary_inference: descriptive
+
+trading:
+  role: secondary
+  engine: custom
+  accounting_version: execution_v2
+  cash: 10000.0
+  direction: long_cash
+  execution_timeframe: 1h
+  first_fill_delay_hours: 1
+  holding_interval_hours: 24
+  policy_thresholds: [0.50, 0.55, 0.60]
+  primary_policy_threshold: 0.55
+  costs:
+    - {name: zero, commission_bps: 0, slippage_bps: 0}
+    - {name: base, commission_bps: 6, slippage_bps: 5}
+    - {name: stress, commission_bps: 12, slippage_bps: 10}
+  primary_cost: base
+  max_participation: 1.0
+  volume_sensitivity: 0.0
+  positions_across_folds: carry
+  missing_decision_history: cash
+  terminal_liquidation: required_with_costs
+  daily_risk_free_rate: 0.0
+  sharpe_annualization_days: 365
+  sharpe_standard_deviation_ddof: 1
+
+evidence:
+  minimum_framework_ancestor: v3.0.0
+  software_revision: actual_clean_checkout_at_launch
+  evidence_revision: actual_clean_checkout_at_launch
+  snapshot_before_fitting: true
+  freeze_environment_and_hardware: true
+  fresh_run_directory: true
+  resume: require_original_identity_and_verified_checkpoints
+  result_store: framework_results
+  database_required: false
+  compact_retention: [identity, completion, output_manifest, inputs, calendar, predictions, fit_metadata]
+
+expected:
+  model_count: 9
+  asset_count: 3
+  fold_count: 6
+  seed_count: 3
+  final_model_fits: 486
+  duration_selection_fits: 378
+  estimator_training_stages: 864
+  primary_contrasts: 9
+  policy_replays: 306
