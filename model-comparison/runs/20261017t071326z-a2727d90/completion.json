@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "asset_count": 3,
+    "duration_selection_fits": 378,
+    "estimator_training_stages": 864,
+    "final_model_fits": 486,
+    "fold_count": 6,
+    "model_count": 9,
+    "policy_replays": 306,
+    "primary_contrasts": 9,
+    "seed_count": 3
+  },
+  "ensemble_and_reference_rows": 36135,
+  "final_fits": 486,
+  "fingerprint": "18519a9a7f8349fe4d35ab86924595b15cffb7a8fb6a7c1a1461b080b04cf9a0",
+  "individual_forecast_rows": 88695,
+  "policy_replays": 306,
+  "run_id": "20261017t071326z-a2727d90",
+  "selection_fits": 378,
+  "stage": "complete",
+  "training_stages": 864
+}

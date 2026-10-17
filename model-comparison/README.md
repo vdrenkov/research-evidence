@@ -206,6 +206,19 @@ predictions and fit metadata. Larger artifacts remain in the framework's results
 store, identified by the run records. Data sharing remains subject to provider
 conditions.
 
+### Completed execution
+
+Run `20261017t071326z-a2727d90` completed 486 final fits, 378 duration-selection
+fits and 306 policy replays. Its compact verification package is in
+`runs/20261017t071326z-a2727d90/`: the archived design/configuration, run records,
+exact inputs, eligibility calendar, original seed and ensemble/reference
+predictions, and fit metadata.
+
+The output manifest covers the full original run. Workbooks, figures, fitted
+states and individual forecast/trading checkpoints remain in the framework's
+`results/model-comparison/20261017t071326z-a2727d90/` directory. Their manifest
+entries identify the separately retained files; they are not duplicated here.
+
 ### Commands
 
 After both repositories are committed and clean, run from the framework checkout:

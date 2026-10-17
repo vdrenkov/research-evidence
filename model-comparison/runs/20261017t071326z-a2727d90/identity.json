@@ -1,0 +1,1223 @@
+{
+  "created_at_utc": "2026-10-17T07:13:30.751119+00:00",
+  "fingerprint": "18519a9a7f8349fe4d35ab86924595b15cffb7a8fb6a7c1a1461b080b04cf9a0",
+  "frozen_files": {
+    "calendar.parquet": "9506c98e8ccc69f9e32e9a3a0573a5d5a81d46d7ac7a7bb78932c793027dde50",
+    "design.md": "e4d3fe1ae61f85ee78a4ea97e5f89d7cb470def3c0957b4df997689718b03953",
+    "preparation.json": "7ed98861677ea05f528b2a920d785ce1002ad4ad65d3419759d9cbfce8e81e4b",
+    "study.yaml": "813493c67fe3448407a84292adeca00dfef514a1fe26f03cb40b0f16726bd3be"
+  },
+  "identity": {
+    "config_sha256": "813493c67fe3448407a84292adeca00dfef514a1fe26f03cb40b0f16726bd3be",
+    "design_sha256": "e4d3fe1ae61f85ee78a4ea97e5f89d7cb470def3c0957b4df997689718b03953",
+    "environment": {
+      "packages": {
+        "Jinja2": "3.1.6",
+        "MarkupSafe": "3.0.3",
+        "PyYAML": "6.0.3",
+        "Pygments": "2.19.2",
+        "SQLAlchemy": "2.0.43",
+        "aiodns": "3.5.0",
+        "aiohappyeyeballs": "2.6.1",
+        "aiohttp": "3.12.15",
+        "aiosignal": "1.4.0",
+        "annotated-types": "0.7.0",
+        "ast_serialize": "0.12.1",
+        "attrs": "25.3.0",
+        "backtrader": "1.9.78.123",
+        "bandit": "1.9.4",
+        "build": "1.6.1",
+        "ccxt": "4.5.6",
+        "certifi": "2025.8.3",
+        "cffi": "2.0.0",
+        "charset-normalizer": "3.4.3",
+        "click": "8.3.0",
+        "codespell": "2.4.2",
+        "colorama": "0.4.6",
+        "contourpy": "1.3.3",
+        "coverage": "7.16.2",
+        "crypto-backtest-framework": "3.0.0",
+        "cryptography": "46.0.1",
+        "cycler": "0.12.1",
+        "et_xmlfile": "2.0.0",
+        "filelock": "3.29.7",
+        "fonttools": "4.60.1",
+        "frozenlist": "1.7.0",
+        "fsspec": "2026.6.0",
+        "greenlet": "3.2.4",
+        "idna": "3.10",
+        "iniconfig": "2.3.0",
+        "joblib": "1.5.3",
+        "kiwisolver": "1.4.9",
+        "librt": "0.16.0",
+        "lxml": "6.1.1",
+        "markdown-it-py": "4.0.0",
+        "matplotlib": "3.10.6",
+        "mdurl": "0.1.2",
+        "mpmath": "1.3.0",
+        "multidict": "6.6.4",
+        "mypy": "2.4.0",
+        "mypy_extensions": "1.1.0",
+        "narwhals": "2.6.0",
+        "networkx": "3.6.1",
+        "numpy": "2.3.3",
+        "openpyxl": "3.1.5",
+        "packaging": "25.0",
+        "pandas": "2.3.3",
+        "pathspec": "1.1.1",
+        "pillow": "11.3.0",
+        "pip": "26.1.2",
+        "plotly": "6.3.0",
+        "pluggy": "1.6.0",
+        "propcache": "0.3.2",
+        "psycopg": "3.2.10",
+        "psycopg-binary": "3.2.10",
+        "py-spy": "0.4.2",
+        "pyarrow": "21.0.0",
+        "pycares": "4.11.0",
+        "pycparser": "2.23",
+        "pydantic": "2.12.5",
+        "pydantic_core": "2.41.5",
+        "pymupdf": "1.28.0",
+        "pyparsing": "3.2.5",
+        "pypdf": "6.12.1",
+        "pyproject_hooks": "1.3.3",
+        "pytest": "9.0.2",
+        "pytest-cov": "7.1.0",
+        "python-dateutil": "2.9.0.post0",
+        "python-docx": "1.2.0",
+        "python-dotenv": "1.1.1",
+        "pytz": "2025.2",
+        "requests": "2.32.5",
+        "rich": "14.1.0",
+        "ruamel.yaml": "0.18.16",
+        "ruamel.yaml.clib": "0.2.14",
+        "ruff": "0.16.10",
+        "scikit-learn": "1.8.0",
+        "scipy": "1.17.1",
+        "setuptools": "80.9.0",
+        "shellingham": "1.5.4",
+        "six": "1.17.0",
+        "stevedore": "5.9.1",
+        "sympy": "1.14.0",
+        "threadpoolctl": "3.6.0",
+        "torch": "2.13.0+cu126",
+        "typer": "0.19.2",
+        "typing-inspection": "0.4.2",
+        "typing_extensions": "4.15.0",
+        "tzdata": "2025.2",
+        "urllib3": "2.5.0",
+        "wheel": "0.48.0",
+        "xgboost": "3.2.0",
+        "yarl": "1.20.1"
+      },
+      "platform": "Windows-10-10.0.19045-SP0",
+      "python": "3.13.14"
+    },
+    "evidence_commit": "e9edcc84ad8bfc4187250dc0e7e0982486388ceb",
+    "framework_baseline": "40081eaeb44bd2590dcc355de50ca1b675de48d1",
+    "framework_branch": "master",
+    "framework_commit": "e00f04819ce6058b109e47fdc3d282cb47c61aef",
+    "hardware": {
+      "compute_threads": 1,
+      "logical_cpu_count": 8,
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+      "training_device": "cpu"
+    }
+  },
+  "purpose": "full",
+  "run_id": "20261017t071326z-a2727d90",
+  "scientific_digest": "08880c5a71a3d7fb0cfac67e8d835e594c87c3985b1ce0f0d4616797f02dd4e3",
+  "smoke": {
+    "outputs_sha256": "c0212897b8edbb0b64edd4aa133480cf0488c4bc4e0924db4e421cbb9e6cdd58",
+    "run_id": "20261016t204617z-a0404997"
+  },
+  "snapshots": {
+    "BTCUSDT": "458c8d8be19e6349c86d8b29979cab05248acd8e469dec2858310117b593c263",
+    "ETHUSDT": "2765025aec2c529ad0071285e4d7320e6cd48abeb333c997ebe1569dfb6dc22a",
+    "SOLUSDT": "b71082d8f0f3dbda49121b10ea823683a0687c7647ee0246b09e44217812b7ad"
+  },
+  "source_partitions": [
+    {
+      "bytes": 44601,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2020/month=09/part.parquet",
+      "sha256": "779d2a9959b156684d963666b4505bd69bc806fa2b372ea0e30e2e8c1c3b0f6e",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45754,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2020/month=10/part.parquet",
+      "sha256": "ff173b1f1fc05901dcf97751a3f36743834c35a394f199e188f014a33ebd19dc",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45567,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2020/month=11/part.parquet",
+      "sha256": "95f8320fdccf33a5a31ec5ac8c49598696d16cfb615583e50c3148a417b61cd1",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46645,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2020/month=12/part.parquet",
+      "sha256": "222d99c4109a9efa9760cf8689bbbc2e0cafca9af0a93fe8390b74126c65c35f",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46281,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=01/part.parquet",
+      "sha256": "c1f2058e7d91d5ab641fbc6e9af7379dcc69a2c1f9b01da6d4335552080b557e",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44009,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=02/part.parquet",
+      "sha256": "3f73ed5661093c1a73f28da5fb93eeeb17444aecbcef1d0e1eab4a57f0b7c84a",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46940,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=03/part.parquet",
+      "sha256": "ca369299db526288ef3d4a1797125dfee5cdbeee7d769e92e5362d93a793d6de",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45803,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=04/part.parquet",
+      "sha256": "4bf60f164199d9e1a44a9f68d88919d4b882e8279d547d560e98fd5eb531124e",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46522,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=05/part.parquet",
+      "sha256": "9b8fceaa64cb99d4927515c7a286835cf0935c085988fc14477b4df43564336a",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45240,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=06/part.parquet",
+      "sha256": "b21ddc201eac8962a9ff94f441a1495e6e796035a58dbff731d7dc6a77edcccb",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46317,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=07/part.parquet",
+      "sha256": "9457acf1b3cc7d5325e4c9f6f2f7dad1a81417a44695c8a185345bb38a521f73",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46675,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=08/part.parquet",
+      "sha256": "b0869ea41572cc8b49115983ca0478d5f2b9a3349467751ad892b07d49e9fe47",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45812,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=09/part.parquet",
+      "sha256": "8552a7a01870e6276ec55f7c5d5774c485b46b6608e38b1035a83f9509e28fc1",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46441,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=10/part.parquet",
+      "sha256": "7f49288f3655298c61a99e95756a60b4b3df4216ff45788b7f43e0d05be458f1",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45259,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=11/part.parquet",
+      "sha256": "97457e478fb1a37c030e78cf45e99190c223d35e6c82c107f9a926745847044c",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46118,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2021/month=12/part.parquet",
+      "sha256": "85de6487dc18c8bc0ab4a5dc9f7b2fde6690214b501477df98efaed9c2a6ab4d",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46323,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=01/part.parquet",
+      "sha256": "6924b1075e151a31ee67a0fd4e790ccd47593fe63e63fff009e16017601ea168",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 43220,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=02/part.parquet",
+      "sha256": "3c05194910eb51becbe922e2bbd2f82cc2c78a2fca6846b73b66184dbfe03845",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46340,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=03/part.parquet",
+      "sha256": "4ddd6ad9d18d7b1a3a8fe52b02843bb1aead5ba4a8571390d8bf92d7161d275d",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45141,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=04/part.parquet",
+      "sha256": "9f949a70b82a5c755b66c709ed107ef5d67edcef22015486682e90f4c9357580",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46394,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=05/part.parquet",
+      "sha256": "dffb7769c86b1b4c186651082c28f314fba54eff30aa3037ffc3ef0f34a7f66b",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45463,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=06/part.parquet",
+      "sha256": "ea241b841588957a1ec20285e009154ab0702730fe75cef23713b2dea8226889",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46291,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=07/part.parquet",
+      "sha256": "8e864977ae82f4548061eedc75def9e5e53301c680ba6d5b1c28e0afa804f575",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46128,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=08/part.parquet",
+      "sha256": "adee5a7e116aee1c661449bef68efdb9ef1b5d5ccc183ba8032069bc5da5b9de",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44977,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=09/part.parquet",
+      "sha256": "a9edda6a59c9a790a7defa0c57a1425aa1bd3cc3e1cd5e78fba88d67b3d8c43a",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45834,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=10/part.parquet",
+      "sha256": "e54064aeeb9f2fc3472c0f478b53dcbaa9940cf0a88fc15d4e7aeae802595e58",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44985,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=11/part.parquet",
+      "sha256": "2b1c75771a34d0325fdc2cd6f03098f4a88117cdffed455b553d833c3a0552e6",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45562,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2022/month=12/part.parquet",
+      "sha256": "b6571da3856ce29518bade5f2ea427317211eedbd1163dbaab3647142ebe0ab9",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46076,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=01/part.parquet",
+      "sha256": "30edd0ab8939fe8e4f42a2c0025546d18f4fd859a11d7b581b90104ebce05738",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 43007,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=02/part.parquet",
+      "sha256": "333742bfe855553fcd990ca6eed712adac5307ad017de593d9ab49484daf16e9",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46775,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=03/part.parquet",
+      "sha256": "d7f74e677c2c3b574afb0649f2f8c137f1f24587ff6bc27db66ae83d5771e6f1",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44950,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=04/part.parquet",
+      "sha256": "f71af2568d1fbe333e095f1f5f0907e4e6cb675cbfb62c8ce8d0c9789a895b6a",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46099,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=05/part.parquet",
+      "sha256": "a7374ff6d149a9f90ce8abf52d227a3a84e03780beb3464f8f84911367690534",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44943,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=06/part.parquet",
+      "sha256": "c30c3436d35f82e8c79326659c5d374fafa3971d4473b8cb9e2f03fd8576e867",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45395,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=07/part.parquet",
+      "sha256": "bebcd9d8e9daef64cf89c16ca033ce88129572ab0ed7d11572e3f519684bf65b",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45576,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=08/part.parquet",
+      "sha256": "5f552997ee9587a8a76368cc776e2fd30b81ff9b92fb08e19781a2249938bc92",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44648,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=09/part.parquet",
+      "sha256": "bfd0ed06bdc7d0d791cd27381f628694170d17ab61a2894abd95f384dd986a98",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46041,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=10/part.parquet",
+      "sha256": "bd79a3dc5ceaad040c6880c663cd66cbc6322c19aab529f6a79b28dab4471eb3",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44694,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=11/part.parquet",
+      "sha256": "9ca218b099d8aa3578fe113c9a10505d3139ddd3a51a00409a2ecfa887f75e1a",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45850,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2023/month=12/part.parquet",
+      "sha256": "56e6bfd91a69dce99fded1fc76a80142c60733193b685f44a01a645ccfd7cad9",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46023,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=01/part.parquet",
+      "sha256": "0ddbf971d94e90485e6fe22b4b9256cf4e20cec6781f6971c18ce87f20f57517",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44208,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=02/part.parquet",
+      "sha256": "05455572429d4e8ae8e18e615fdc61a8f7aeabbb04d74f6913136e5062e75613",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46128,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=03/part.parquet",
+      "sha256": "83098ef5e7a3dc3f381230a24150c55580d9c624fc32017d2988aef0e6be40de",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45096,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=04/part.parquet",
+      "sha256": "bfb73614903871325653337b1473c41804eb60dc6bcac78a91e6e23ad4ba048d",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46063,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=05/part.parquet",
+      "sha256": "a65246a63c90a1f8424e4e42c348203ae1b38689ec3814458d7d2d6342603a1c",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44970,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=06/part.parquet",
+      "sha256": "3b68f5f0ff4df8260a35b4a26d2ac85510fd2fdf31e2bf0d5f648be9d817fa22",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45993,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=07/part.parquet",
+      "sha256": "a98c000a024c5a59c2970c2d849b01a7e27473d5672ffad16fd2103de7002b48",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46038,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=08/part.parquet",
+      "sha256": "5abce02ff76dccb69d5376b60b53bb6f6c13f43bdacbdeccbf8843d74a095036",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44833,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=09/part.parquet",
+      "sha256": "e2ac22f2e467ce18dbf9913bdd29e0ce62787e0a6f079dc7f0780bff4c766737",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45760,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=10/part.parquet",
+      "sha256": "a92ec75e63f8d5a6b8893f4d5296e13545a58bc4eb34e7114f7915bbce0c1209",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45155,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=11/part.parquet",
+      "sha256": "b90eb5547af577efb22fc8e6625b73b0c603f5f3015c83cf866188dd4ab1fa42",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46122,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2024/month=12/part.parquet",
+      "sha256": "9dd2daa69e632eaa6e4105b84698c0931dbffccd29fd6e09375730fa58bc4e45",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46150,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=01/part.parquet",
+      "sha256": "5568f26e25b6beb55ec44ccb5663a58327d7805d375d9a5dbe79768505d855f8",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 43089,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=02/part.parquet",
+      "sha256": "3b13baaa8f638c9b68e50a1e658db951aad79fb5bbfb2812c9429e41b6de2999",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46142,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=03/part.parquet",
+      "sha256": "c360c3ce58660661549dab6ba5fbca11597fe1cd9a2d1e5ee2bbd1e93f26d453",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45131,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=04/part.parquet",
+      "sha256": "9cd1618666a3ba5c27048d6a3acf91e5f8290f8fd70876dd49ee33e833b69e8d",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46101,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=05/part.parquet",
+      "sha256": "8215b1f1dbb5e1d747459a774c9fac9b3f9e6a7cc3377347ad8d64e4acc12bef",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 44920,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=06/part.parquet",
+      "sha256": "fc9ed078fb86fe226f90f3670259c9243ed6044d34205bc2f551def1a99fc702",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 45878,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=07/part.parquet",
+      "sha256": "7b479f450cad89e78d25d7bba4345e558adafc582b0df8d2da4039edee29c8e5",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 46223,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=BTCUSDT/year=2025/month=08/part.parquet",
+      "sha256": "99ddb1ae87e2950e24c5047c5102c82da24fff8922f93d2257c81526114e0ea6",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bytes": 42169,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2020/month=09/part.parquet",
+      "sha256": "dc82ff8f424e9c12f394c04af7b4f300e64275d875dff219d915ec6113126839",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42728,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2020/month=10/part.parquet",
+      "sha256": "fef8cff84d3640e544bff5dc073704d4a2b8432dc987769a8be5a5392fdd943c",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43128,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2020/month=11/part.parquet",
+      "sha256": "ba40eb77e635b39a3ed191acecaf215b58e51609417a5308b9ff96a67cf11e35",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43646,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2020/month=12/part.parquet",
+      "sha256": "afb0fb6e15ea3276092826642253be71e59d8fb6a8f0b9c0818ed0b1bb8dd3d5",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43618,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=01/part.parquet",
+      "sha256": "c22369c20b82173af0fb2e40ecd81c6606aa0bde34d11b0019e61c5211f63728",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 41526,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=02/part.parquet",
+      "sha256": "e27a2fb903e01ad49d6ef392b82480b4cea7903a66a594921e4e1279bfbac6ce",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44156,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=03/part.parquet",
+      "sha256": "1d841f855c8bab105b60bddeb7e64cc80544442da25d882492c05e24a9796d0a",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44239,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=04/part.parquet",
+      "sha256": "d959371a1553a97454328430618ebdf6a21a7f02cbf4f4917db2743803a239b1",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45652,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=05/part.parquet",
+      "sha256": "e5e8ebc73531ad00930273b4d6f9a8d477371649ca176345d3cafe8369c5d3bd",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43909,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=06/part.parquet",
+      "sha256": "adcca17670a40715ff8d9fdf03f4e92e48db801e9c653ab9f0d3519668e2801f",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44614,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=07/part.parquet",
+      "sha256": "25ad47c50ba18c169f2741c7306514430e02c08dada2d6c018cff3361cdec452",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45058,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=08/part.parquet",
+      "sha256": "502290284104bc0d6cd6333d64b7f90c2308aef7a26a1c7b151f2489dc41ce1e",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44519,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=09/part.parquet",
+      "sha256": "1735dea08000a1d2af8d91c90bc4644fcd8d112d7ce7411c57908bd3426d638e",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45148,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=10/part.parquet",
+      "sha256": "142012ca5ba0580e4b20db6f9f03f8b1b7d2a834f165e3ae6798247d5d02838f",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44328,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=11/part.parquet",
+      "sha256": "a2c86780fe4c13dc1a17ff488780e4e692a99c82543e9844507c5e37d9950be1",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45078,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2021/month=12/part.parquet",
+      "sha256": "68d2bce2174b9e10301b3ff0895a29d6ffa802b4e719b653a7d3a6d387111590",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45088,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=01/part.parquet",
+      "sha256": "907da0235a0d0b03ddaeb97234da892d927a1acabcbfe738489d98069d444687",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42037,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=02/part.parquet",
+      "sha256": "763a3f36cbbf28c12bd7f4cc5fc63f78439164ce3cb085358ac7764685cc30a3",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44952,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=03/part.parquet",
+      "sha256": "52f3d581eb4e324a9d53cdac3ea43b8aeb6b098f250e5b3496c410a51d4f4d0d",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43802,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=04/part.parquet",
+      "sha256": "e77df3218c3816608814d46180e19eb928d8a6eb3f0fd091429ffdcfb161b718",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44562,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=05/part.parquet",
+      "sha256": "9cb2a18919d4c0b312aec4d300bff5560ac4c570d19e9a24c3443e20cdd6ea31",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42771,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=06/part.parquet",
+      "sha256": "7fc25fb876f9c1cba0f5328bbfa697703e97964488a19031251ff7c9c004c28a",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43807,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=07/part.parquet",
+      "sha256": "ef21f204f563e5ce0b1b6b9e2d8673a4bfb1253f4696112d276d637178be0419",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43842,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=08/part.parquet",
+      "sha256": "89cce710a81b3df2e000cbd6ff15b1ee6ab23ac749319117ed79faea36b8c53b",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42623,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=09/part.parquet",
+      "sha256": "aa8dd12d1bcaa84f2b2f962f6d65ba1b2e0a96eaf6e568040fc2b34670447912",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43149,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=10/part.parquet",
+      "sha256": "9a2c62cb1c30e199e8040f7201bd61b6e32fd220b9c5077e3c8a2d6bc4eba109",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42349,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=11/part.parquet",
+      "sha256": "c0827544dbfba79ac50f5acbe74e8777f561048d7fc390432f6b4f33c9a171ed",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42642,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2022/month=12/part.parquet",
+      "sha256": "0b5e9891dd978f1a597c59df9b2ceef001ca22312c2d8f9919a5c6c856611d79",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43025,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=01/part.parquet",
+      "sha256": "02e94754a6abd3e6da5a630b7c0e84a527b9b40972698acc05808618a686bb25",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 40331,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=02/part.parquet",
+      "sha256": "22947725cf1689c781e0a61c33898fdea6b88261b3b8992af1e03060905c8437",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43890,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=03/part.parquet",
+      "sha256": "70a874e2b358a10faa27444756f3636c69c8129740527fc67e8281ebff8426cc",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42507,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=04/part.parquet",
+      "sha256": "7a1bf2ac76752efaf52103361c1173ca8f37284a47b8435830ba1bb20dd51892",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42777,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=05/part.parquet",
+      "sha256": "56861592344a09479574b47aa6f2b4a0a28ade4b3def67ec4cf0606f2ba48c5d",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42211,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=06/part.parquet",
+      "sha256": "59f1c5de27138f55aa1eea713b1a46ecad2a265627d47980fdb1eafeefe63170",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42628,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=07/part.parquet",
+      "sha256": "569f39e236dc1a4c5e0d9901b0e609bdcca26a2c1957efc0762c248f01413d69",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42482,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=08/part.parquet",
+      "sha256": "cc03ad22935a3c3a58da4cafa9c26e539e011b6bc99a3c2ca015fa3d8bed04a0",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 41301,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=09/part.parquet",
+      "sha256": "e6fc2474192f412983bad6a11cf66a90ef82b7fa2e37f75338d4b2bd476b2a64",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43355,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=10/part.parquet",
+      "sha256": "c89b93d688dd3e397a950f9701d03f0c291268ea36d970f0210b4a5ba7bd0f38",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42706,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=11/part.parquet",
+      "sha256": "3fcb31ccd438cb351c0d30d2c627da72c9f648f61bbb48a95fc0f41a77594b00",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44033,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2023/month=12/part.parquet",
+      "sha256": "de36b05734866d60e5881433366d20f0371e06c8139e3be10372d59a61b780e8",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44607,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=01/part.parquet",
+      "sha256": "52d63613bf48942dd44a0f092fd30ea3f94c6a56a16e3aba678f2406c1df9d56",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43121,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=02/part.parquet",
+      "sha256": "44021b5438ced4415d7a296bceedfd5481090b0d7d31edcd71cd4e39a64b3330",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44966,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=03/part.parquet",
+      "sha256": "507b5e72aaf512f6fcf3c22d9a77f641de4259ffe42245c5f17353c83a587ebe",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43698,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=04/part.parquet",
+      "sha256": "a1c54ff66d38ed464895f44dc417c3f56d9871f0c30bff10dfcee3644fa25122",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44693,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=05/part.parquet",
+      "sha256": "f1253df29a0279aaed7e63afcf575a37c74a04678d2e4db44b70e483bff5daf7",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43101,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=06/part.parquet",
+      "sha256": "8f6f6a27c55022f40aca40f81e64b16f690c28642b92e568ca753d5968c61d11",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44907,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=07/part.parquet",
+      "sha256": "6c1b8a2a92b96864d6c660cb83f4edce2f2ce0dcf4d811194b105c4ae6e3244c",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44692,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=08/part.parquet",
+      "sha256": "7ce53dd95d45e4a63b468b8f96c004dc59f1e4c3e408c72832d2d9de8627b1a1",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43534,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=09/part.parquet",
+      "sha256": "8c9c3d73a7f9735db52c19870f480a709b7afa60f0f573333033f656a4e4a4bb",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44413,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=10/part.parquet",
+      "sha256": "992c54a1a439ab521e95dc37731b7453676eac5e7776cdd21012e6c4c6df0398",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43781,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=11/part.parquet",
+      "sha256": "827a29dad88585e632c860ad0b9991fd42666be3616d584a32df4a83773684d7",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44692,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2024/month=12/part.parquet",
+      "sha256": "eae9085ca391c10dc9cc82ab197019b254e374e90560c6c10af3872aeaac20c0",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44572,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=01/part.parquet",
+      "sha256": "57a28888689c9e5a4e0f3082c9d6707666f43f2fb8b26c7e0f4a11c4d9cab2f8",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 41750,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=02/part.parquet",
+      "sha256": "c3aa60aea673c259e2fee377312db80e829b2f4da237174e990558c7cba96fea",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44101,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=03/part.parquet",
+      "sha256": "e16c6133dad1a4a16d68c79c3b68e9ff764d632378d04a699faed1a25e1b3a17",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 42445,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=04/part.parquet",
+      "sha256": "8e32eb611ba6b28e1abcb48ef13bb42143a3577c28a5198f4d60411bc2d31c14",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 44313,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=05/part.parquet",
+      "sha256": "f35770d3a723801445a70d26af95f26bcb771de1894de4fe5c87557af8cf299c",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 43455,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=06/part.parquet",
+      "sha256": "ebfb0fdcfc68485fbb96878a1cac3af058e59362d8f1ba141ecf75602543a965",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45067,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=07/part.parquet",
+      "sha256": "574ebfcd3f1118523bf68955a066abb18df106248d286736db94b313f3c7541b",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 45487,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=ETHUSDT/year=2025/month=08/part.parquet",
+      "sha256": "aee1eb542431c6990ee50923a92861b86a8dcfe4032f24e61f2b4ba16437462d",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bytes": 46634,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2020/month=09/part.parquet",
+      "sha256": "5745f4a6fe8214a1233446fc8481b58e7b618ffe6f0445e2d6613ee30deff710",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 48890,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2020/month=10/part.parquet",
+      "sha256": "6a5c08bc811e6a24831bed480b65905d1d8d402d48e9346a6800d76df09d659d",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 48802,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2020/month=11/part.parquet",
+      "sha256": "13eacabfd96d2f3008c73525cbccf61043446cdafaf9c52dfc514b0a3bfe5fcc",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 49778,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2020/month=12/part.parquet",
+      "sha256": "e21da3df73209adaa22f3e26928c89ff7bb8bf296858107349fb47c348259d9e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 48335,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=01/part.parquet",
+      "sha256": "36ed2b4c51cd964d1fa67e755af821ac35a4dfedd9ac9d21ccde78cfc85577e3",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 47007,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=02/part.parquet",
+      "sha256": "20ef582ab5d6f500e3c5cad46e4cba69da6b7bb64cd14eeda69173d58cb2696a",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 51308,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=03/part.parquet",
+      "sha256": "f4b016900572b4e4c0627a8eb9fcd7bc2307278359b8059691b1857db23ab7e6",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 49280,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=04/part.parquet",
+      "sha256": "bf0282ecb39291bd670684c88273879434c72b92aa1b8743c95b8c7b170cca0f",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 45570,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=05/part.parquet",
+      "sha256": "de45d3b10590d0fdff0629b4278bf291ae5ce8fe54d2bef65b2e101cf2d7180c",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 44604,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=06/part.parquet",
+      "sha256": "9afbcd74d12e10ecb2f23baec46edcf58d68309ff8d999090a07d9aabc55b5c7",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 45207,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=07/part.parquet",
+      "sha256": "92d452e751c0828bb3409eb1528920eed369b82979650f79b8edb4970f56f06c",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 45919,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=08/part.parquet",
+      "sha256": "b91592e556b7592bb0231b64b7868950f494651bfb2774cef6b03b5ef2ec1aa0",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41360,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=09/part.parquet",
+      "sha256": "4a953d554452b57fd89f65ff622aed6d3547cab83d75cecd6a228f04a3565dbd",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41384,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=10/part.parquet",
+      "sha256": "e47cfc320cab561bfd7bf4f5bd5bd204d313c74ae788dca8d8c8ca65afca46d8",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40621,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=11/part.parquet",
+      "sha256": "dcd9a97b9e4c61c7a64b740217164f8c9cc9e39d9493d3c7fd9d0132baefe591",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41430,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2021/month=12/part.parquet",
+      "sha256": "f7b237e59a50a73888a3e7a376d64bab552b6933ff09f03fbc636e2f6892a615",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41455,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=01/part.parquet",
+      "sha256": "11d0e9d47188918ebe9621bf783b9f895f2764a63f6cdea0dd39a7579eb4b175",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 38598,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=02/part.parquet",
+      "sha256": "2307896f58eb819e51ca429f1277106b9fb6d7dabb788850f2d400d4ccd29f60",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40888,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=03/part.parquet",
+      "sha256": "000f78e326588b03fae609fa877ff3667496e0a3e7a3f5994c87981746925fa6",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39909,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=04/part.parquet",
+      "sha256": "69a95d8c243eae072c3a676963fbaa7a08d07334be30030f5e7e641611e49c97",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41304,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=05/part.parquet",
+      "sha256": "f71d9505acad73c35a24c9ea4599a96d09bceb4b7d93c7e4ae134054ed35be0e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39035,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=06/part.parquet",
+      "sha256": "591280727aa4c0ac1167a1f29563d0803843541c7ebdc8a55f54a8ff67707e74",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39264,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=07/part.parquet",
+      "sha256": "bfacf434cb69e04f29c10a18db87cba0b60456801338da0b2d9059eb1a07269e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39227,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=08/part.parquet",
+      "sha256": "9cb3c5fbc9e8129670547414f3d6074f7951f7b1ebe25c2855cbd10d321c8add",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 35192,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=09/part.parquet",
+      "sha256": "0dd21778885926e9cf3115bcbf3673362e3d609d9899ff15ab7c74a5fab4b89e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 36324,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=10/part.parquet",
+      "sha256": "45f7f2f5f317b0abfac0de44a136647a5265f90c8a40b984b34905cbe5bae8a1",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 36806,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=11/part.parquet",
+      "sha256": "a8d2435aef71d1904ad6c2b9d88ada229424171d0f9ab64d39a5a5e536e1f7a9",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 34349,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2022/month=12/part.parquet",
+      "sha256": "cf5e4476fed3e781503c753cce8aab5bb79cc7681ecc14a41d5641f83b8402de",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 37224,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=01/part.parquet",
+      "sha256": "5e9c21c99979bbb703a8832034824cdc30924a5b0253504f008747e01c168339",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 33972,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=02/part.parquet",
+      "sha256": "20f01178fbd90fe73f2e3021e7d8a94f7e8f441a1c7b9438ce85a583a413e26f",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 36428,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=03/part.parquet",
+      "sha256": "2b3bb116fc7351f0aff49a6e31942fc6666410d270362a358331643187b0e769",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 35171,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=04/part.parquet",
+      "sha256": "8c54a4bae5a638f1a96b9415c60b164419426c83af26baed38545febaf7e52c4",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 34198,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=05/part.parquet",
+      "sha256": "44e691b9f05d47f3600aeafd82028ab3bbdf2be0728614cef1787ae161ed80d4",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 35799,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=06/part.parquet",
+      "sha256": "9866da9423cf9a1a165d75cdfc8e02865ce58901afb1d4217b464cf96a17f77d",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 37553,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=07/part.parquet",
+      "sha256": "28c2bc6bb00a0665c53ba60da50f443c58a2900b4e0c18e7398c2a240f9a2a6e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 35057,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=08/part.parquet",
+      "sha256": "c5deb0efac1ee63d4ce30f18d72ccd9f139a730ce67a5d5b80ef44d782ba018c",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 32312,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=09/part.parquet",
+      "sha256": "30a3f934a72300da9e6b7ebdd5811a0e04513b7668ff2392ab04d4cbbc5c4706",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 37056,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=10/part.parquet",
+      "sha256": "4d6a6cf8445f4605a79610c7ca04e8af895bd009a4846b5d654658acd70cd0db",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39036,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=11/part.parquet",
+      "sha256": "3a8094b5bf9717a746f2e240e845823540aa9cf9187194e2de92e07fe82a7610",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41303,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2023/month=12/part.parquet",
+      "sha256": "8a630456f4f6d68fe7dfccedeb92c67114730e1fceb20617e3f1219c6f7cead1",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40475,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=01/part.parquet",
+      "sha256": "ca81942bf04d1e86aaf7b4a6efe2a33abdf017fb19eb3aba8c3261c34762b6b1",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 38902,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=02/part.parquet",
+      "sha256": "0115a6c082b2ffd9e3145d0f4d5eb8e8ab2dc524f50aa33dedd75ee8cebc759b",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41439,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=03/part.parquet",
+      "sha256": "db056e0f56939c6c740a72f963f37060acc855ccb849edc107e8e5e071421c57",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40626,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=04/part.parquet",
+      "sha256": "09bfc7b6c8b3fa4c31c98c7ae7f95ae9bb5d89557053cbe0ec29e83ee352e4f5",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41369,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=05/part.parquet",
+      "sha256": "7a45694a2302aea512f5e0d71a0013add1a78e9b55ab512bcac86c96f2139572",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40567,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=06/part.parquet",
+      "sha256": "fdb9d18b990dcf74ca38a4338d220388c7743eac8de97ca20362e21a06f75dd1",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 42104,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=07/part.parquet",
+      "sha256": "0ef8693480eff3349332a318a0cc2425499543709f12c92cdc0eedf591d7ad8e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40933,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=08/part.parquet",
+      "sha256": "11c574bf6feefb9f5f5053f99c01d1270f6effa6d4dd72d0c40c48951062c5c9",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39978,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=09/part.parquet",
+      "sha256": "ef8602bec505a9108b915245f950b8ebd2ac46fd3c8ab536f70462221067b95a",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41404,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=10/part.parquet",
+      "sha256": "df845df9c6ad5addc6f2c4cad78d1d40e095cc4235dcb2a76a75061a838eab8d",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41707,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=11/part.parquet",
+      "sha256": "03b944b64615cf8df09e209991fae5a53b8e2803de1631ffe7f52e809ee183a8",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 42156,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2024/month=12/part.parquet",
+      "sha256": "e98bf651028588a1f0387fa71f1ea5208138959203f233040245d1e14af197be",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 42794,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=01/part.parquet",
+      "sha256": "af5fe8c8740b163da88a490e016560207cc7dcf1e24bdfdd0a13d5e9200d50ca",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 39729,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=02/part.parquet",
+      "sha256": "7fde01d8d12c7e1b5dbb2eba4b5c9cb8209473bf37097046b7826d965020af53",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 42015,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=03/part.parquet",
+      "sha256": "04b6e020c7aff8cbd93842d9c84368862fa7c3356eebffe3936ec88a8ddbc8ec",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41309,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=04/part.parquet",
+      "sha256": "77545cada2623d1a48679c73d087a7fda3d54d5d3d5210ce0ba22d9b1d4b1fb6",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41160,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=05/part.parquet",
+      "sha256": "9f4b5c76c61e0dc663378f5ed3459e7b662efee648723f90d2c7bdb29558c31a",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 40135,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=06/part.parquet",
+      "sha256": "1ac8864d432caa4aa3e5e4cee90179be0399b2a0aa7e87dedeb68199ab037a7b",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41826,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=07/part.parquet",
+      "sha256": "56c437b5d228a34d4f2993c293eb5bf3e14dd210e4c19444a93e67f7649ae5a8",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bytes": 41924,
+      "path": "parquet/exchange=binance/timeframe=1h/symbol=SOLUSDT/year=2025/month=08/part.parquet",
+      "sha256": "53134b5109308a45b366bbcfece70b21fab8a47d74ace5e79803efdb270fb889",
+      "symbol": "SOLUSDT"
+    }
+  ]
+}
