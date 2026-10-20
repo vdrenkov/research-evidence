@@ -1,0 +1,14 @@
+{
+  "eligible_primary_contrasts": 18,
+  "final_model_fits": 0,
+  "fingerprint": "8499fee4d5e97bfb446653ada80919ccf089a8619c1a37faaf67d0a0668db7e0",
+  "outer_test_scores_computed": true,
+  "policy_replays": 432,
+  "primary_contrasts": 18,
+  "run_id": "20261019t093122z-b7411ba6",
+  "sensitivity_contrasts": 36,
+  "source_run_id": "20261017t071326z-a2727d90",
+  "stage": "complete",
+  "state_reference_contrasts": 18,
+  "state_rows": 3285
+}

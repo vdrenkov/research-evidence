@@ -1,0 +1,200 @@
+{
+  "counts": {
+    "asset_count": 3,
+    "duration_selection_fits": 378,
+    "estimator_training_stages": 864,
+    "final_model_fits": 486,
+    "fold_count": 6,
+    "model_count": 9,
+    "policy_replays": 306,
+    "primary_contrasts": 9,
+    "seed_count": 3
+  },
+  "fold_support": [
+    {
+      "decision_origins": 181,
+      "expected_test_origins": 181,
+      "final_training_rows": 497,
+      "fold": "fold-01",
+      "score_origins": 181,
+      "selection_training_rows": 407,
+      "symbol": "BTCUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 155,
+      "expected_test_origins": 184,
+      "final_training_rows": 599,
+      "fold": "fold-02",
+      "score_origins": 154,
+      "selection_training_rows": 509,
+      "symbol": "BTCUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 182,
+      "expected_test_origins": 182,
+      "final_training_rows": 658,
+      "fold": "fold-03",
+      "score_origins": 182,
+      "selection_training_rows": 568,
+      "symbol": "BTCUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 184,
+      "expected_test_origins": 184,
+      "final_training_rows": 700,
+      "fold": "fold-04",
+      "score_origins": 184,
+      "selection_training_rows": 610,
+      "symbol": "BTCUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 181,
+      "expected_test_origins": 181,
+      "final_training_rows": 700,
+      "fold": "fold-05",
+      "score_origins": 181,
+      "selection_training_rows": 610,
+      "symbol": "BTCUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 183,
+      "expected_test_origins": 183,
+      "final_training_rows": 700,
+      "fold": "fold-06",
+      "score_origins": 183,
+      "selection_training_rows": 610,
+      "symbol": "BTCUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 181,
+      "expected_test_origins": 181,
+      "final_training_rows": 497,
+      "fold": "fold-01",
+      "score_origins": 181,
+      "selection_training_rows": 407,
+      "symbol": "ETHUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 155,
+      "expected_test_origins": 184,
+      "final_training_rows": 599,
+      "fold": "fold-02",
+      "score_origins": 154,
+      "selection_training_rows": 509,
+      "symbol": "ETHUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 182,
+      "expected_test_origins": 182,
+      "final_training_rows": 658,
+      "fold": "fold-03",
+      "score_origins": 182,
+      "selection_training_rows": 568,
+      "symbol": "ETHUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 184,
+      "expected_test_origins": 184,
+      "final_training_rows": 700,
+      "fold": "fold-04",
+      "score_origins": 184,
+      "selection_training_rows": 610,
+      "symbol": "ETHUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 181,
+      "expected_test_origins": 181,
+      "final_training_rows": 700,
+      "fold": "fold-05",
+      "score_origins": 181,
+      "selection_training_rows": 610,
+      "symbol": "ETHUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 183,
+      "expected_test_origins": 183,
+      "final_training_rows": 700,
+      "fold": "fold-06",
+      "score_origins": 183,
+      "selection_training_rows": 610,
+      "symbol": "ETHUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 181,
+      "expected_test_origins": 181,
+      "final_training_rows": 497,
+      "fold": "fold-01",
+      "score_origins": 181,
+      "selection_training_rows": 407,
+      "symbol": "SOLUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 155,
+      "expected_test_origins": 184,
+      "final_training_rows": 599,
+      "fold": "fold-02",
+      "score_origins": 154,
+      "selection_training_rows": 509,
+      "symbol": "SOLUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 182,
+      "expected_test_origins": 182,
+      "final_training_rows": 658,
+      "fold": "fold-03",
+      "score_origins": 182,
+      "selection_training_rows": 568,
+      "symbol": "SOLUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 184,
+      "expected_test_origins": 184,
+      "final_training_rows": 700,
+      "fold": "fold-04",
+      "score_origins": 184,
+      "selection_training_rows": 610,
+      "symbol": "SOLUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 181,
+      "expected_test_origins": 181,
+      "final_training_rows": 700,
+      "fold": "fold-05",
+      "score_origins": 181,
+      "selection_training_rows": 610,
+      "symbol": "SOLUSDT",
+      "validation_rows": 89
+    },
+    {
+      "decision_origins": 183,
+      "expected_test_origins": 183,
+      "final_training_rows": 700,
+      "fold": "fold-06",
+      "score_origins": 183,
+      "selection_training_rows": 610,
+      "symbol": "SOLUSDT",
+      "validation_rows": 89
+    }
+  ],
+  "synthetic_hours": {
+    "BTCUSDT": 20,
+    "ETHUSDT": 20,
+    "SOLUSDT": 20
+  }
+}

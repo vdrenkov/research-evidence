@@ -1,0 +1,9 @@
+{
+  "fingerprint": "8499fee4d5e97bfb446653ada80919ccf089a8619c1a37faaf67d0a0668db7e0",
+  "metadata": {
+    "block_days": 14,
+    "definition": "trend-threshold-15",
+    "family_size": 36
+  },
+  "trace_sha256": "1c92595919e9b9e62a43b497b468cdfab31353b57b1c51060b96e573722c9ebf"
+}

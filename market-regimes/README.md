@@ -136,3 +136,13 @@ any resumable execution. Commands and resume instructions are in the framework's
 Each fresh `results/market-regimes/<run-id>/` directory retains source records,
 state/reference estimates, code/configuration/environment identities, checkpointed
 intervals and policy traces. Exports are `main-dataset.xlsx` and `tables.xlsx`.
+
+## Completed evaluation
+
+Run `20261019t093122z-b7411ba6` completed on 19 October 2026 using framework
+revision `2266c1e7`. Its `runs/20261019t093122z-b7411ba6/` folder retains exact
+run records, source inputs and forecasts, state/reference estimates and saved
+interval checkpoints. The unmodified output manifest identifies the full execution.
+Detailed policy traces and the original Excel exports remain in the framework’s
+corresponding `results/market-regimes/20261019t093122z-b7411ba6/` directory and
+can be supplied for verification.

@@ -1,0 +1,9 @@
+{
+  "fingerprint": "8499fee4d5e97bfb446653ada80919ccf089a8619c1a37faaf67d0a0668db7e0",
+  "metadata": {
+    "block_days": 14,
+    "definition": "trend-window-60",
+    "family_size": 36
+  },
+  "trace_sha256": "678d9f4abde46eeb959e03b872b8141419d92ae26ab71d914f1d0e6bc52c8b68"
+}

@@ -1,0 +1,15 @@
+{
+  "calibration_rows": 18,
+  "counts": {
+    "final_model_fits": 0,
+    "policy_replays": 432,
+    "primary_contrasts": 18,
+    "sensitivity_contrasts": 36,
+    "state_reference_contrasts": 18
+  },
+  "forecast_fits_performed": 0,
+  "source_forecast_rows": 36135,
+  "source_run": "20261017t071326z-a2727d90",
+  "source_scored_dates": 1065,
+  "state_rows": 3285
+}

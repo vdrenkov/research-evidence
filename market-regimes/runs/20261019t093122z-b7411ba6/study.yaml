@@ -1,0 +1,61 @@
+schema_version: 1
+study_id: market-regimes
+status: ready
+execution_ready: true
+
+source:
+  study_id: model-comparison
+  run_id: 20261017t071326z-a2727d90
+  framework_commit: e00f04819ce6058b109e47fdc3d282cb47c61aef
+  outputs_sha256: d0ecc417cd504469c6fa5f49d166a08fd6f58da3aafbf6ad1ffa83b4537cb3ef
+  identity_sha256: 31e12d3463fc7969b1a6631fc2c18303bc71296b83be6e5307af0f5747abbd21
+
+symbols: [BTCUSDT, ETHUSDT, SOLUSDT]
+
+regimes:
+  trend_days: 90
+  trend_return_threshold: 0.10
+  moving_average_days: 30
+  slope_days: 5
+  volatility_days: 30
+  volatility_quantiles: [0.3333333333333333, 0.6666666666666666]
+  minimum_training_state_rows: 250
+  close_repair_policy: exclude_dependent_windows
+
+analysis:
+  primary_metric: brier_loss
+  reference: training_up_rate
+  family_error_rate: 0.05
+  family_adjustment: bonferroni
+  replicates: 100000
+  block_days: [7, 14, 28]
+  primary_block_days: 14
+  seed: 20261018
+  minimum_state_dates: 60
+  minimum_state_episodes: 3
+  minimum_state_folds: 3
+  minimum_valid_draw_fraction: 0.95
+
+extensions:
+  inference: review_motivated_secondary_families
+  state_sensitivities:
+    - name: trend-threshold-15
+      trend_return_threshold: 0.15
+    - name: trend-window-60
+      trend_days: 60
+    - name: volatility-window-45
+      volatility_days: 45
+    - name: volatility-quartiles
+      volatility_quantiles: [0.25, 0.75]
+  state_reference:
+    smoothing_alpha: 1.0
+    minimum_training_rows: 30
+    dimensions: [trend, volatility]
+    sparse_or_unknown: source_training_up_rate
+
+trading:
+  threshold: 0.55
+  costs: [zero, base, stress]
+  gates: [bull_only, avoid_high_volatility]
+  control: first_training_gate_share_cash_sleeve
+  inference: descriptive_only
