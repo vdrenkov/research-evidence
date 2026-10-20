@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "source_policy": "Reuse these exact historical snapshots; no automatic network acquisition. Availability delays are scenario assumptions, not historical provider vintages.",
+  "sources": [
+    {
+      "id": "onchain",
+      "provider": "coinmetrics_community",
+      "series_id": "btc_eth_network_activity",
+      "snapshot_id": "ab3bfd2f7674c8e20565e242273a2b2bb8ae3575bf3d2a5a41119f4113aacadb",
+      "normalized": "multimodal/normalized/provider=coinmetrics_community/source=coinmetrics_network_daily/series=btc_eth_network_activity/snapshot=ab3bfd2f7674c8e20565/observations.parquet",
+      "rows": 16808,
+      "measurement_start_utc": "2020-06-01 00:00:00+00:00",
+      "measurement_end_utc": "2026-03-03 00:00:00+00:00",
+      "retrieved_at_utc": "2026-08-06T16:36:52.895163+00:00",
+      "source_configuration": {
+        "assets": [
+          "BTC",
+          "ETH"
+        ],
+        "availability": {
+          "anchor": "event_end_utc",
+          "lag_seconds": 86400
+        },
+        "end_exclusive": "2026-03-03",
+        "frequency": "1d",
+        "metrics": [
+          "AdrActCnt",
+          "TxCnt",
+          "TxTfrCnt",
+          "FeeTotNtv"
+        ],
+        "provider": "coinmetrics_community",
+        "series_id": "btc_eth_network_activity",
+        "source_id": "coinmetrics_network_daily",
+        "start": "2020-06-01"
+      },
+      "files": {
+        "multimodal/normalized/provider=coinmetrics_community/source=coinmetrics_network_daily/series=btc_eth_network_activity/snapshot=ab3bfd2f7674c8e20565/observations.parquet": {
+          "sha256": "3372ba32e162927546a38b554fa0b4a694e5498b8f3ee84ef9a4e9181a83e4e6",
+          "bytes": 413586,
+          "archive_name": "observations.parquet"
+        },
+        "multimodal/normalized/provider=coinmetrics_community/source=coinmetrics_network_daily/series=btc_eth_network_activity/snapshot=ab3bfd2f7674c8e20565/manifest.json": {
+          "sha256": "a8c3c10a9420bd3c2b5fe7bfd5306eeae59a26aa82ef92ff2ef607597826abdd",
+          "bytes": 1238,
+          "archive_name": "normalized-manifest.json"
+        },
+        "multimodal/raw/provider=coinmetrics_community/source=coinmetrics_network_daily/series=btc_eth_network_activity/snapshot=ab3bfd2f7674c8e20565/manifest.json": {
+          "sha256": "fe094cee8db83fdd49b66e41ee0480ab471fc6c5a37c22ae21828d44e6ba2c70",
+          "bytes": 1935,
+          "archive_name": "raw-manifest.json"
+        },
+        "multimodal/raw/provider=coinmetrics_community/source=coinmetrics_network_daily/series=btc_eth_network_activity/snapshot=ab3bfd2f7674c8e20565/page-0001.json": {
+          "sha256": "2459d00568de0e0b03f5fbe95bd7a08d4c85e86f1e2f28ea53f144607c37338e",
+          "bytes": 616025,
+          "archive_name": "page-0001.json"
+        }
+      }
+    },
+    {
+      "id": "attention-btc",
+      "provider": "wikimedia_pageviews",
+      "series_id": "btc_bitcoin_article",
+      "snapshot_id": "2f88e069fc0cba0e17c1e12ce12b352010cb2ca3f0be3eaa2ca653200dee2a52",
+      "normalized": "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=btc_bitcoin_article/snapshot=2f88e069fc0cba0e17c1/observations.parquet",
+      "rows": 2101,
+      "measurement_start_utc": "2020-06-01 00:00:00+00:00",
+      "measurement_end_utc": "2026-03-03 00:00:00+00:00",
+      "retrieved_at_utc": "2026-08-06T16:37:33.915286+00:00",
+      "source_configuration": {
+        "access": "all-access",
+        "agent": "user",
+        "article": "Bitcoin",
+        "asset": "BTC",
+        "availability": {
+          "anchor": "event_end_utc",
+          "lag_seconds": 86400
+        },
+        "end_exclusive": "2026-03-03",
+        "project": "en.wikipedia.org",
+        "provider": "wikimedia_pageviews",
+        "series_id": "btc_bitcoin_article",
+        "source_id": "wikimedia_attention_daily",
+        "start": "2020-06-01"
+      },
+      "files": {
+        "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=btc_bitcoin_article/snapshot=2f88e069fc0cba0e17c1/observations.parquet": {
+          "sha256": "2f81854238b65147df34f27e6208a4055c5649cde79fd0986cc33b701f034675",
+          "bytes": 97106,
+          "archive_name": "observations.parquet"
+        },
+        "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=btc_bitcoin_article/snapshot=2f88e069fc0cba0e17c1/manifest.json": {
+          "sha256": "14c54b5dc40f5e45bc375ea8f39c2b15bd7c6341d64940da7288d93155024e16",
+          "bytes": 1267,
+          "archive_name": "normalized-manifest.json"
+        },
+        "multimodal/raw/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=btc_bitcoin_article/snapshot=2f88e069fc0cba0e17c1/manifest.json": {
+          "sha256": "c7f82c3876c77985f78589ca522c254a7363db8c7a451a071c07ee66553ccd77",
+          "bytes": 1590,
+          "archive_name": "raw-manifest.json"
+        },
+        "multimodal/raw/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=btc_bitcoin_article/snapshot=2f88e069fc0cba0e17c1/page-0001.json": {
+          "sha256": "e8f23a1b540ddcf29de544095eb7913b212cea4be48fd25a3c5eae0a131bd172",
+          "bytes": 303116,
+          "archive_name": "page-0001.json"
+        }
+      }
+    },
+    {
+      "id": "attention-eth",
+      "provider": "wikimedia_pageviews",
+      "series_id": "eth_ethereum_article",
+      "snapshot_id": "e3515dbe58c76711fcfbea7193f677b5004c7f1c7d722fd0ea2a7708229dc3aa",
+      "normalized": "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=eth_ethereum_article/snapshot=e3515dbe58c76711fcfb/observations.parquet",
+      "rows": 2101,
+      "measurement_start_utc": "2020-06-01 00:00:00+00:00",
+      "measurement_end_utc": "2026-03-03 00:00:00+00:00",
+      "retrieved_at_utc": "2026-08-06T16:37:37.890979+00:00",
+      "source_configuration": {
+        "access": "all-access",
+        "agent": "user",
+        "article": "Ethereum",
+        "asset": "ETH",
+        "availability": {
+          "anchor": "event_end_utc",
+          "lag_seconds": 86400
+        },
+        "end_exclusive": "2026-03-03",
+        "project": "en.wikipedia.org",
+        "provider": "wikimedia_pageviews",
+        "series_id": "eth_ethereum_article",
+        "source_id": "wikimedia_attention_daily",
+        "start": "2020-06-01"
+      },
+      "files": {
+        "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=eth_ethereum_article/snapshot=e3515dbe58c76711fcfb/observations.parquet": {
+          "sha256": "eb13e22c5105e42e0c50298e4efd1e6da7324e7f3f50e85613b3de00c0bf8421",
+          "bytes": 95439,
+          "archive_name": "observations.parquet"
+        },
+        "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=eth_ethereum_article/snapshot=e3515dbe58c76711fcfb/manifest.json": {
+          "sha256": "14c21919d60ab9b02af9aee8fc66215e9d468051e9a5c003b88dd7b50fc4fcf2",
+          "bytes": 1268,
+          "archive_name": "normalized-manifest.json"
+        },
+        "multimodal/raw/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=eth_ethereum_article/snapshot=e3515dbe58c76711fcfb/manifest.json": {
+          "sha256": "f28fd2f09377d89bffcfd5853da4ee2423cedbeb72b88cd83c0dfbde1865a559",
+          "bytes": 1594,
+          "archive_name": "raw-manifest.json"
+        },
+        "multimodal/raw/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=eth_ethereum_article/snapshot=e3515dbe58c76711fcfb/page-0001.json": {
+          "sha256": "af0b571232c10979eb87e863f0435e6614689a68a0a883ffe2f064cf5cd3571d",
+          "bytes": 304571,
+          "archive_name": "page-0001.json"
+        }
+      }
+    },
+    {
+      "id": "attention-sol",
+      "provider": "wikimedia_pageviews",
+      "series_id": "sol_solana_blockchain_platform_article",
+      "snapshot_id": "fd9baa79aaf4efe18010740ddb8930d5457f48f9a50ffa012c900c81c491e9a8",
+      "normalized": "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=sol_solana_blockchain_platform_article/snapshot=fd9baa79aaf4efe18010/observations.parquet",
+      "rows": 1635,
+      "measurement_start_utc": "2021-09-10 00:00:00+00:00",
+      "measurement_end_utc": "2026-03-03 00:00:00+00:00",
+      "retrieved_at_utc": "2026-08-06T16:50:27.040242+00:00",
+      "source_configuration": {
+        "access": "all-access",
+        "agent": "user",
+        "article": "Solana_(blockchain_platform)",
+        "asset": "SOL",
+        "availability": {
+          "anchor": "event_end_utc",
+          "lag_seconds": 86400
+        },
+        "coverage": {
+          "declared_provider_omissions": [],
+          "expected_cadence": "1d",
+          "required_end_exclusive": "2026-03-03",
+          "required_start": "2021-09-10"
+        },
+        "end_exclusive": "2026-03-03",
+        "project": "en.wikipedia.org",
+        "provider": "wikimedia_pageviews",
+        "series_id": "sol_solana_blockchain_platform_article",
+        "source_id": "wikimedia_attention_daily",
+        "start": "2021-09-10"
+      },
+      "files": {
+        "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=sol_solana_blockchain_platform_article/snapshot=fd9baa79aaf4efe18010/observations.parquet": {
+          "sha256": "eb58e7635076739f9e1722a2c5a07818d02d4a0bce28f5b78cfaa64bc4fb9967",
+          "bytes": 74952,
+          "archive_name": "observations.parquet"
+        },
+        "multimodal/normalized/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=sol_solana_blockchain_platform_article/snapshot=fd9baa79aaf4efe18010/manifest.json": {
+          "sha256": "a3cccbfc4ffb245f8b0e14006f48598078ce3c469fd9d165661c43d9f53a939e",
+          "bytes": 1286,
+          "archive_name": "normalized-manifest.json"
+        },
+        "multimodal/raw/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=sol_solana_blockchain_platform_article/snapshot=fd9baa79aaf4efe18010/manifest.json": {
+          "sha256": "090e67602eddc74f6be27123c0a5b097c56190c966f22ee404eab7d8474cc068",
+          "bytes": 1867,
+          "archive_name": "raw-manifest.json"
+        },
+        "multimodal/raw/provider=wikimedia_pageviews/source=wikimedia_attention_daily/series=sol_solana_blockchain_platform_article/snapshot=fd9baa79aaf4efe18010/page-0001.json": {
+          "sha256": "5f075ae5ad97c44baaf789c780018548ccedaa948aad3b523b4b5c3415611213",
+          "bytes": 268531,
+          "archive_name": "page-0001.json"
+        }
+      }
+    }
+  ]
+}
