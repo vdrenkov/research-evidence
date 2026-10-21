@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "attribution": null,
+    "provider_reference": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/",
+    "source_config": {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Ethereum",
+      "asset": "ETH",
+      "availability": {
+        "anchor": "event_end_utc",
+        "lag_seconds": 86400
+      },
+      "end_exclusive": "2026-03-03",
+      "project": "en.wikipedia.org",
+      "provider": "wikimedia_pageviews",
+      "series_id": "eth_ethereum_article",
+      "source_id": "wikimedia_attention_daily",
+      "start": "2020-06-01"
+    }
+  },
+  "pages": [
+    {
+      "attempt": 1,
+      "bytes": 304571,
+      "file": "page-0001.json",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+      },
+      "index": 1,
+      "request_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Ethereum/daily/20200601/20260302",
+      "retrieved_at_utc": "2026-08-06T16:37:37.890979+00:00",
+      "sha256": "af0b571232c10979eb87e863f0435e6614689a68a0a883ffe2f064cf5cd3571d",
+      "status_code": 200
+    }
+  ],
+  "provider": "wikimedia_pageviews",
+  "retrieved_at_max_utc": "2026-08-06T16:37:37.890979+00:00",
+  "retrieved_at_min_utc": "2026-08-06T16:37:37.890979+00:00",
+  "schema_version": "paper5_raw_http_snapshot_v1",
+  "series_id": "eth_ethereum_article",
+  "snapshot_id": "e3515dbe58c76711fcfbea7193f677b5004c7f1c7d722fd0ea2a7708229dc3aa",
+  "source_id": "wikimedia_attention_daily"
+}

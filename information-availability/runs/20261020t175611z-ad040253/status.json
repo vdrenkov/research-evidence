@@ -1,0 +1,18 @@
+{
+  "asset_arm_delay_cells": 36,
+  "estimator_training_stages": 4968,
+  "final_model_fits": 1512,
+  "fold_count": 6,
+  "forecast_rows": 124830,
+  "interval_rows": 54,
+  "model_count": 3,
+  "outer_test_scores_computed": true,
+  "outputs_sha256": "554ca6aa08f9f8c793e8574bca8bade1c0a668c9c25334f663fb68d9ef6ef839",
+  "policy_replays": 342,
+  "primary_contrasts": 4,
+  "run_id": "20261020t175611z-ad040253",
+  "secondary_contrasts": 14,
+  "seed_forecast_rows": 275940,
+  "selection_model_fits": 3456,
+  "stage": "complete"
+}

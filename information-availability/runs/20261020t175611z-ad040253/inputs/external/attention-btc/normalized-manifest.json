@@ -1,0 +1,39 @@
+{
+  "available_at_max_utc": "2026-03-04T00:00:00+00:00",
+  "available_at_min_utc": "2020-06-03T00:00:00+00:00",
+  "columns": [
+    "source_id",
+    "provider",
+    "series_id",
+    "asset",
+    "metric",
+    "event_start_utc",
+    "event_end_utc",
+    "provider_time_utc",
+    "available_at_utc",
+    "retrieved_at_utc",
+    "value",
+    "value_text",
+    "observation_state",
+    "provider_status",
+    "provider_status_time_utc",
+    "snapshot_id",
+    "raw_page_sha256"
+  ],
+  "metadata": {
+    "attribution": null,
+    "availability_anchor": "event_end_utc",
+    "availability_lag_seconds": 86400,
+    "provider_reference": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/"
+  },
+  "parquet_sha256": "2f81854238b65147df34f27e6208a4055c5649cde79fd0986cc33b701f034675",
+  "provider": "wikimedia_pageviews",
+  "provider_time_max_utc": "2026-03-02T00:00:00+00:00",
+  "provider_time_min_utc": "2020-06-01T00:00:00+00:00",
+  "rows": 2101,
+  "schema_version": "paper5_normalized_observation_v1",
+  "series_id": "btc_bitcoin_article",
+  "snapshot_id": "2f88e069fc0cba0e17c1e12ce12b352010cb2ca3f0be3eaa2ca653200dee2a52",
+  "source_id": "wikimedia_attention_daily",
+  "table_sha256": "e7c9d857b270989d3a0ce24cf6a4e6107d05db5136d51b9eb7d0aa88b487d83f"
+}

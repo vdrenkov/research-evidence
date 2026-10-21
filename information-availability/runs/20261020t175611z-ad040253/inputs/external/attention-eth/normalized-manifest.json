@@ -1,0 +1,39 @@
+{
+  "available_at_max_utc": "2026-03-04T00:00:00+00:00",
+  "available_at_min_utc": "2020-06-03T00:00:00+00:00",
+  "columns": [
+    "source_id",
+    "provider",
+    "series_id",
+    "asset",
+    "metric",
+    "event_start_utc",
+    "event_end_utc",
+    "provider_time_utc",
+    "available_at_utc",
+    "retrieved_at_utc",
+    "value",
+    "value_text",
+    "observation_state",
+    "provider_status",
+    "provider_status_time_utc",
+    "snapshot_id",
+    "raw_page_sha256"
+  ],
+  "metadata": {
+    "attribution": null,
+    "availability_anchor": "event_end_utc",
+    "availability_lag_seconds": 86400,
+    "provider_reference": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/"
+  },
+  "parquet_sha256": "eb13e22c5105e42e0c50298e4efd1e6da7324e7f3f50e85613b3de00c0bf8421",
+  "provider": "wikimedia_pageviews",
+  "provider_time_max_utc": "2026-03-02T00:00:00+00:00",
+  "provider_time_min_utc": "2020-06-01T00:00:00+00:00",
+  "rows": 2101,
+  "schema_version": "paper5_normalized_observation_v1",
+  "series_id": "eth_ethereum_article",
+  "snapshot_id": "e3515dbe58c76711fcfbea7193f677b5004c7f1c7d722fd0ea2a7708229dc3aa",
+  "source_id": "wikimedia_attention_daily",
+  "table_sha256": "62fd5cf2ed8bb2ba38a607339c78298fd7724a23ac54caba0a262a49f913feb2"
+}

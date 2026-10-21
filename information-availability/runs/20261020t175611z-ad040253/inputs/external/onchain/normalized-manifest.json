@@ -1,0 +1,39 @@
+{
+  "available_at_max_utc": "2026-03-04T00:00:00+00:00",
+  "available_at_min_utc": "2020-06-03T00:00:00+00:00",
+  "columns": [
+    "source_id",
+    "provider",
+    "series_id",
+    "asset",
+    "metric",
+    "event_start_utc",
+    "event_end_utc",
+    "provider_time_utc",
+    "available_at_utc",
+    "retrieved_at_utc",
+    "value",
+    "value_text",
+    "observation_state",
+    "provider_status",
+    "provider_status_time_utc",
+    "snapshot_id",
+    "raw_page_sha256"
+  ],
+  "metadata": {
+    "attribution": null,
+    "availability_anchor": "event_end_utc",
+    "availability_lag_seconds": 86400,
+    "provider_reference": "https://docs.coinmetrics.io/api"
+  },
+  "parquet_sha256": "3372ba32e162927546a38b554fa0b4a694e5498b8f3ee84ef9a4e9181a83e4e6",
+  "provider": "coinmetrics_community",
+  "provider_time_max_utc": "2026-03-02T00:00:00+00:00",
+  "provider_time_min_utc": "2020-06-01T00:00:00+00:00",
+  "rows": 16808,
+  "schema_version": "paper5_normalized_observation_v1",
+  "series_id": "btc_eth_network_activity",
+  "snapshot_id": "ab3bfd2f7674c8e20565e242273a2b2bb8ae3575bf3d2a5a41119f4113aacadb",
+  "source_id": "coinmetrics_network_daily",
+  "table_sha256": "f6926da324ad2ab5e40f762b7d9e6afa550f9fb4c0306c7cedeb015dbe4ecb79"
+}

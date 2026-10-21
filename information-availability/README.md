@@ -95,7 +95,10 @@ model outcomes: SOL's first selection window has at most 172 usable examples,
 versus 225 for the core assets. Its limited early sample is a secondary-scope
 limitation; actual feature-complete counts are retained by execution.
 
-All models minimize unweighted log loss. Logistic regression selects C from
+The models use unweighted observations. Logistic regression and XGBoost optimize
+log loss; Random Forest uses Gini splits and log-loss selection. This clarifies
+the frozen description’s broader objective wording; the executed code and results
+are unchanged. Logistic regression selects C from
 0.01/0.1/1/10, uses training-only standardization and at most 3,000 iterations.
 Random Forest selects depth 3/6, with 300 trees and minimum leaf size 10.
 XGBoost selects depth 2/3, learning rate 0.05, maximum 250 rounds, subsample and
@@ -163,9 +166,13 @@ the design, source responses, normalized observations, hourly inputs, aligned
 features, eligibility, environment, checkpoints, forecasts, fitted states and
 policy traces. It exports one dataset and one analyses workbook. Failures and
 identity violations remain recorded; completed artifacts are not overwritten.
-After verification, retain the compact inputs/predictions/identity/analysis records
-needed to support the paper in this evidence repository. Detailed models and
-policy traces remain in the framework result store with their manifest identities.
+The verified completed run is `20261020t175611z-ad040253` (framework `69d83d5`,
+design commit `73286ad`): 3,456 selection fits, 1,512 final fits and 342 policy
+replays. Exact verification copies are retained in `runs/20261020t175611z-ad040253/`,
+including inputs, aligned features, forecasts, training records and the analysis
+workbook. The original manifest describes the full run. Detailed fitted models,
+policy traces and the original dataset export remain in the framework result
+store at the corresponding manifest paths.
 
 Repositories remain private; reviewer access can be arranged subject to provider
 conditions. Wikimedia API data are CC0 under its

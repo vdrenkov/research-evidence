@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "attribution": null,
+    "provider_reference": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/",
+    "source_config": {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Bitcoin",
+      "asset": "BTC",
+      "availability": {
+        "anchor": "event_end_utc",
+        "lag_seconds": 86400
+      },
+      "end_exclusive": "2026-03-03",
+      "project": "en.wikipedia.org",
+      "provider": "wikimedia_pageviews",
+      "series_id": "btc_bitcoin_article",
+      "source_id": "wikimedia_attention_daily",
+      "start": "2020-06-01"
+    }
+  },
+  "pages": [
+    {
+      "attempt": 1,
+      "bytes": 303116,
+      "file": "page-0001.json",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+      },
+      "index": 1,
+      "request_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Bitcoin/daily/20200601/20260302",
+      "retrieved_at_utc": "2026-08-06T16:37:33.915286+00:00",
+      "sha256": "e8f23a1b540ddcf29de544095eb7913b212cea4be48fd25a3c5eae0a131bd172",
+      "status_code": 200
+    }
+  ],
+  "provider": "wikimedia_pageviews",
+  "retrieved_at_max_utc": "2026-08-06T16:37:33.915286+00:00",
+  "retrieved_at_min_utc": "2026-08-06T16:37:33.915286+00:00",
+  "schema_version": "paper5_raw_http_snapshot_v1",
+  "series_id": "btc_bitcoin_article",
+  "snapshot_id": "2f88e069fc0cba0e17c1e12ce12b352010cb2ca3f0be3eaa2ca653200dee2a52",
+  "source_id": "wikimedia_attention_daily"
+}

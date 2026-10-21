@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "attribution": null,
+    "provider_reference": "https://docs.coinmetrics.io/api",
+    "source_config": {
+      "assets": [
+        "BTC",
+        "ETH"
+      ],
+      "availability": {
+        "anchor": "event_end_utc",
+        "lag_seconds": 86400
+      },
+      "end_exclusive": "2026-03-03",
+      "frequency": "1d",
+      "metrics": [
+        "AdrActCnt",
+        "TxCnt",
+        "TxTfrCnt",
+        "FeeTotNtv"
+      ],
+      "provider": "coinmetrics_community",
+      "series_id": "btc_eth_network_activity",
+      "source_id": "coinmetrics_network_daily",
+      "start": "2020-06-01"
+    }
+  },
+  "pages": [
+    {
+      "attempt": 1,
+      "bytes": 616025,
+      "file": "page-0001.json",
+      "headers": {
+        "cf-ray": "a26f76bb8830d0ec-SOF",
+        "content-type": "application/json",
+        "x-ratelimit-limit": "6000, 6000;w=20;comment=\"sliding window\"",
+        "x-ratelimit-plan": "download",
+        "x-ratelimit-remaining": "5999",
+        "x-ratelimit-reset": "20"
+      },
+      "index": 1,
+      "request_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc%2Ceth&end_inclusive=false&end_time=2026-03-03T00%3A00%3A00Z&format=json&frequency=1d&metrics=AdrActCnt%2CTxCnt%2CTxTfrCnt%2CFeeTotNtv&page_size=10000&paging_from=start&sort=time&start_time=2020-06-01T00%3A00%3A00Z&status=all",
+      "retrieved_at_utc": "2026-08-06T16:36:52.895163+00:00",
+      "sha256": "2459d00568de0e0b03f5fbe95bd7a08d4c85e86f1e2f28ea53f144607c37338e",
+      "status_code": 200
+    }
+  ],
+  "provider": "coinmetrics_community",
+  "retrieved_at_max_utc": "2026-08-06T16:36:52.895163+00:00",
+  "retrieved_at_min_utc": "2026-08-06T16:36:52.895163+00:00",
+  "schema_version": "paper5_raw_http_snapshot_v1",
+  "series_id": "btc_eth_network_activity",
+  "snapshot_id": "ab3bfd2f7674c8e20565e242273a2b2bb8ae3575bf3d2a5a41119f4113aacadb",
+  "source_id": "coinmetrics_network_daily"
+}

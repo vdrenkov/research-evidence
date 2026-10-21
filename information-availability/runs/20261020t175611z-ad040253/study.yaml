@@ -1,0 +1,64 @@
+schema_version: 1
+study_id: information-availability
+status: ready
+execution_ready: true
+exchange: binance
+symbols:
+- BTCUSDT
+- ETHUSDT
+- SOLUSDT
+data_start: '2020-09-01T00:00:00Z'
+data_end: '2025-09-01T00:00:00Z'
+test_start: '2022-09-01T00:00:00Z'
+test_end_exclusive: '2025-08-31T00:00:00Z'
+train_months: 24
+fold_months: 6
+expected_folds: 6
+validation_days: 90
+minimum_selection_rows: 150
+minimum_validation_rows: 60
+minimum_final_rows: 250
+technical_history_days: 73
+onchain_delays_hours:
+- 24
+- 48
+- 72
+primary_delay_hours: 24
+attention_delay_hours: 24
+maximum_release_age_hours: 0
+seeds:
+- 17
+- 42
+- 73
+probability_objective: unweighted_log_loss
+selection_metric: mean_seed_validation_log_loss
+selection_tie_rule: first_declared_candidate
+probability_clip: 1.0e-07
+bootstrap_replicates: 100000
+bootstrap_seed: 20261020
+block_days:
+- 7
+- 14
+- 28
+primary_block_days: 14
+policy_threshold: 0.55
+costs:
+- name: zero
+  commission_bps: 0.0
+  slippage_bps: 0.0
+- name: base
+  commission_bps: 6.0
+  slippage_bps: 5.0
+- name: stress
+  commission_bps: 12.0
+  slippage_bps: 10.0
+expected:
+  asset_arm_delay_cells: 36
+  model_count: 3
+  fold_count: 6
+  final_model_fits: 1512
+  selection_model_fits: 3456
+  estimator_training_stages: 4968
+  primary_contrasts: 4
+  secondary_contrasts: 14
+  policy_replays: 342

@@ -1,0 +1,39 @@
+{
+  "available_at_max_utc": "2026-03-04T00:00:00+00:00",
+  "available_at_min_utc": "2021-09-12T00:00:00+00:00",
+  "columns": [
+    "source_id",
+    "provider",
+    "series_id",
+    "asset",
+    "metric",
+    "event_start_utc",
+    "event_end_utc",
+    "provider_time_utc",
+    "available_at_utc",
+    "retrieved_at_utc",
+    "value",
+    "value_text",
+    "observation_state",
+    "provider_status",
+    "provider_status_time_utc",
+    "snapshot_id",
+    "raw_page_sha256"
+  ],
+  "metadata": {
+    "attribution": null,
+    "availability_anchor": "event_end_utc",
+    "availability_lag_seconds": 86400,
+    "provider_reference": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/"
+  },
+  "parquet_sha256": "eb58e7635076739f9e1722a2c5a07818d02d4a0bce28f5b78cfaa64bc4fb9967",
+  "provider": "wikimedia_pageviews",
+  "provider_time_max_utc": "2026-03-02T00:00:00+00:00",
+  "provider_time_min_utc": "2021-09-10T00:00:00+00:00",
+  "rows": 1635,
+  "schema_version": "paper5_normalized_observation_v1",
+  "series_id": "sol_solana_blockchain_platform_article",
+  "snapshot_id": "fd9baa79aaf4efe18010740ddb8930d5457f48f9a50ffa012c900c81c491e9a8",
+  "source_id": "wikimedia_attention_daily",
+  "table_sha256": "1aaef9bc39d3680503e43c4a0640b38b7122e3a9ab40ee0452b37de63a2b6882"
+}

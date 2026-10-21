@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "attribution": null,
+    "provider_reference": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/",
+    "source_config": {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Solana_(blockchain_platform)",
+      "asset": "SOL",
+      "availability": {
+        "anchor": "event_end_utc",
+        "lag_seconds": 86400
+      },
+      "coverage": {
+        "declared_provider_omissions": [],
+        "expected_cadence": "1d",
+        "required_end_exclusive": "2026-03-03",
+        "required_start": "2021-09-10"
+      },
+      "end_exclusive": "2026-03-03",
+      "project": "en.wikipedia.org",
+      "provider": "wikimedia_pageviews",
+      "series_id": "sol_solana_blockchain_platform_article",
+      "source_id": "wikimedia_attention_daily",
+      "start": "2021-09-10"
+    }
+  },
+  "pages": [
+    {
+      "attempt": 1,
+      "bytes": 268531,
+      "file": "page-0001.json",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\""
+      },
+      "index": 1,
+      "request_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia.org/all-access/user/Solana_%28blockchain_platform%29/daily/20210910/20260302",
+      "retrieved_at_utc": "2026-08-06T16:50:27.040242+00:00",
+      "sha256": "5f075ae5ad97c44baaf789c780018548ccedaa948aad3b523b4b5c3415611213",
+      "status_code": 200
+    }
+  ],
+  "provider": "wikimedia_pageviews",
+  "retrieved_at_max_utc": "2026-08-06T16:50:27.040242+00:00",
+  "retrieved_at_min_utc": "2026-08-06T16:50:27.040242+00:00",
+  "schema_version": "paper5_raw_http_snapshot_v1",
+  "series_id": "sol_solana_blockchain_platform_article",
+  "snapshot_id": "fd9baa79aaf4efe18010740ddb8930d5457f48f9a50ffa012c900c81c491e9a8",
+  "source_id": "wikimedia_attention_daily"
+}
