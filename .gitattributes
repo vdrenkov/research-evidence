@@ -1,2 +1,6 @@
 # Keep hashed run artifacts byte-identical across checkouts.
 */runs/** -text
+
+# Preserve byte-identified pre-execution market snapshots.
+cross-market-stability/inputs/** -text whitespace=cr-at-eol
+cross-market-stability/calendars.json -text whitespace=cr-at-eol
