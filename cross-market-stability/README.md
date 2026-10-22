@@ -115,12 +115,17 @@ Each launch records exact commits, environment, configuration, snapshots and run
 before fitting. Interrupted runs reuse only verified completed cells under that identity.
 Completed packages support read-only Verify. No SQL database or trading replay is used.
 
-The design, source identities and compact daily inputs are retained here. Full outputs,
-seed predictions, fitted states, training records and XLSX exports live under the
-framework's `results/cross-market-stability/<run-id>/`. Preserve that directory and the
-original source archives. After verification, retain the necessary compact result evidence
-here; models and large minute archives need not enter ordinary Git. Access and any public
-redistribution remain subject to source terms and required attribution.
+The verified Full run is `20261021t171003z-7dfaaf9d`, produced with framework
+revision `ec3d208` and design commit `1603571`. It completes 528 model cells,
+3,072 selection fits and 1,488 final fits. Exact verification copies in `runs/`
+retain the execution identities, archived design, calendars, forecasts, training
+records and original analysis workbook, together with the linked Smoke records.
+The twelve daily input snapshots remain in `inputs/`, identified by the original
+run identity. The manifests describe the complete original runs; fitted states,
+per-cell checkpoints and other omitted artifacts remain at their recorded paths in
+the framework's `results/cross-market-stability/<run-id>/` store. Preserve those
+directories and the original minute archives. Access and any public redistribution
+remain subject to source terms and required attribution.
 
 Data sources: [Binance public data](https://github.com/binance/binance-public-data),
 [ECB reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html),

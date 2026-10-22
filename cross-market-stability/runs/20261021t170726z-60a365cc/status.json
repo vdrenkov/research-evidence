@@ -1,0 +1,9 @@
+{
+  "final_fits": 22,
+  "model_cells": 8,
+  "outer_test_scores_computed": false,
+  "outputs_sha256": "990100b1420d4126afaa7333bfe8bccf47f1c79ce0afd002887767a418511403",
+  "run_id": "20261021t170726z-60a365cc",
+  "selection_fits": 46,
+  "stage": "smoke_complete"
+}

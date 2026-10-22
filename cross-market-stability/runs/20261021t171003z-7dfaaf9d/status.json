@@ -1,0 +1,12 @@
+{
+  "final_fits": 1488,
+  "forecast_rows": 88515,
+  "interval_rows": 18,
+  "model_cells": 528,
+  "outputs_sha256": "aeb50b19a056ccbab5c969379c84cefa98916cd36030791dd3ccbc1d8348aa2b",
+  "policy_replays": 0,
+  "run_id": "20261021t171003z-7dfaaf9d",
+  "seed_forecast_rows": 181647,
+  "selection_fits": 3072,
+  "stage": "complete"
+}

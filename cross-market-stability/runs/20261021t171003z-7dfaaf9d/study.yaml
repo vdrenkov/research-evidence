@@ -1,0 +1,72 @@
+schema_version: 1
+study_id: cross-market-stability
+status: ready
+execution_ready: true
+data_start: '2022-09-01'
+data_end_exclusive: '2026-09-02'
+test_start: '2024-09-01'
+test_end_exclusive: '2026-09-01'
+train_months: 24
+fold_months: 6
+history_observations: 28
+target: next_expected_observation_positive
+representation: consecutive_log_returns
+class_weighting: none
+calibration: none
+validation_observations: 90
+minimum_selection_rows: 250
+minimum_validation_rows: 50
+minimum_final_rows: 350
+minimum_scored_per_fold: 40
+seeds:
+- 17
+- 42
+- 73
+logistic_c:
+- 0.01
+- 0.1
+- 1.0
+- 10.0
+forest_depth:
+- 3
+- 6
+boosting_depth:
+- 2
+- 3
+neural_rates:
+- 0.001
+- 0.0003
+neural:
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 64
+  maximum_epochs: 100
+  early_stopping_patience: 12
+  minimum_improvement: 1.0e-05
+  gradient_clip_norm: 1.0
+  loss: unweighted_binary_cross_entropy_with_logits
+  shuffle_training_examples: true
+  seed_final_refit_from_scratch: true
+bootstrap_replicates: 100000
+bootstrap_seed: 20261021
+block_observations:
+- 5
+- 10
+- 20
+primary_block_observations: 10
+probability_clip: 1.0e-07
+family_error_rate: 0.05
+expected:
+  instruments: 12
+  folds: 4
+  main_models: 8
+  native_models: 3
+  final_model_fits: 1488
+  selection_model_fits: 3072
+  primary_contrasts: 3
+  ranking_contrasts: 3
+  policy_replays: 0
+  smoke_model_cells: 8
+  smoke_final_fits: 22
+  smoke_selection_fits: 46

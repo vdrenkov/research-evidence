@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "snapshot_policy": "Retained historical input bytes; no acquisition or automatic refresh. Previously examined data and results inform this retrospective design.",
+  "calendars": {
+    "path": "calendars.json",
+    "sha256": "82facbd297113b941fd62c201af4e8fb7394c2d3ed8661133e0c37244c25c26e",
+    "original_data_path": "paper6/source-quality-audit-2026-10-03/expected-calendars.json",
+    "original_sha256": "c46e20a07300f3b95a753843927ed700ac9bcdee8dbe3610ec8b2501f882650f"
+  },
+  "series": [
+    {
+      "symbol": "BTCUSDT",
+      "group": "crypto",
+      "kind": "crypto",
+      "path": "inputs/BTCUSDT-daily.csv",
+      "price_column": "close",
+      "sha256": "eb0f350245745966aa8dee31b258dce302d74160fb988f5020305e4f497acd85",
+      "bytes": 267772,
+      "original_data_path": "paper6/acquisition-2026-10-03/normalized/binance/BTCUSDT-1d.csv",
+      "source_representation": "Binance UTC daily close in USDT"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "group": "crypto",
+      "kind": "crypto",
+      "path": "inputs/ETHUSDT-daily.csv",
+      "price_column": "close",
+      "sha256": "65ad5a4edfb5c081ded8410988c16b3dd9d6ae6fbfafccef795247fd7661d247",
+      "bytes": 259765,
+      "original_data_path": "paper6/acquisition-2026-10-03/normalized/binance/ETHUSDT-1d.csv",
+      "source_representation": "Binance UTC daily close in USDT"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "group": "crypto",
+      "kind": "crypto",
+      "path": "inputs/SOLUSDT-daily.csv",
+      "price_column": "close",
+      "sha256": "e0f7c855c0fa20babfca4a28ccb51098375a4e8ed01d758606762897fa9929f3",
+      "bytes": 247697,
+      "original_data_path": "paper6/acquisition-2026-10-03/normalized/binance/SOLUSDT-1d.csv",
+      "source_representation": "Binance UTC daily close in USDT"
+    },
+    {
+      "symbol": "SPY",
+      "group": "equity_funds",
+      "kind": "fund",
+      "path": "inputs/SPY-daily.csv",
+      "price_column": "last_observed_core_close",
+      "sha256": "df0cecd06a15f85969a01802489a9389e4cb41f422a27b3731b0d9ee2ea87e94",
+      "bytes": 98975,
+      "original_data_path": "paper6/source-quality-audit-2026-10-03/daily/SPY-core-session-provisional.csv",
+      "source_representation": "Retained HF provider archive: last observed IEX core-session endpoint; corporate-action adjustment is not independently certified",
+      "raw_archive": {
+        "data_path": "paper6/acquisition-2026-10-03/raw/hf/SPY-1min-raw.parquet",
+        "sha256": "491d188e01f58632da874be6ec0782b3bb619c59125b1ad36e185059a9f3d333",
+        "bytes": 51320726,
+        "retrieved_at_utc": "2026-10-02T21:27:53.466735+00:00",
+        "url": "https://api.hfdatalibrary.com/v1/bars/SPY?version=raw"
+      }
+    },
+    {
+      "symbol": "QQQ",
+      "group": "equity_funds",
+      "kind": "fund",
+      "path": "inputs/QQQ-daily.csv",
+      "price_column": "last_observed_core_close",
+      "sha256": "5f1bd552c17fe114185175a81bb7adbd6662a5b8774140228fc5dd15512c9c6e",
+      "bytes": 114602,
+      "original_data_path": "paper6/source-quality-audit-2026-10-03/daily/QQQ-core-session-provisional.csv",
+      "source_representation": "Retained HF provider archive: last observed IEX core-session endpoint; corporate-action adjustment is not independently certified",
+      "raw_archive": {
+        "data_path": "paper6/acquisition-2026-10-03/raw/hf/QQQ-1min-raw.parquet",
+        "sha256": "7ab5b3b235ab749dadd8103c5105d196d1e4bfbd19839909857d5bd24d6b8de8",
+        "bytes": 50613799,
+        "retrieved_at_utc": "2026-10-02T21:27:59.022215+00:00",
+        "url": "https://api.hfdatalibrary.com/v1/bars/QQQ?version=raw"
+      }
+    },
+    {
+      "symbol": "IWM",
+      "group": "equity_funds",
+      "kind": "fund",
+      "path": "inputs/IWM-daily.csv",
+      "price_column": "last_observed_core_close",
+      "sha256": "4026af806b50c02287f7bb28a930fd647117ae92032f637ba1ba12224940841c",
+      "bytes": 119049,
+      "original_data_path": "paper6/source-quality-audit-2026-10-03/daily/IWM-core-session-provisional.csv",
+      "source_representation": "Retained HF provider archive: last observed IEX core-session endpoint; corporate-action adjustment is not independently certified",
+      "raw_archive": {
+        "data_path": "paper6/acquisition-2026-10-03/raw/hf/IWM-1min-raw.parquet",
+        "sha256": "d96392aa603fd4b970a785a8e6b99d8053e832a58ab56d9b5ec19bd528d784b2",
+        "bytes": 47874684,
+        "retrieved_at_utc": "2026-10-02T21:28:04.406710+00:00",
+        "url": "https://api.hfdatalibrary.com/v1/bars/IWM?version=raw"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "group": "fx_references",
+      "kind": "fx",
+      "path": "inputs/EURUSD-daily.csv",
+      "price_column": "reference_price",
+      "sha256": "1aa5a885d828aebcf713248bcdbb1a555dab981f9d01a7e7431ac6cc0e5072a0",
+      "bytes": 74809,
+      "original_data_path": "paper6/acquisition-2026-10-03/normalized/ecb/EURUSD-reference.csv",
+      "source_representation": "ECB information-purpose USD reference cross"
+    },
+    {
+      "symbol": "GBPUSD",
+      "group": "fx_references",
+      "kind": "fx",
+      "path": "inputs/GBPUSD-daily.csv",
+      "price_column": "reference_price",
+      "sha256": "e7f4f0e9708ab5fbb1c9b762ef148e31297a3227c3fb2a82f50b2f788a605fdf",
+      "bytes": 110853,
+      "original_data_path": "paper6/acquisition-2026-10-03/normalized/ecb/GBPUSD-reference.csv",
+      "source_representation": "ECB information-purpose USD reference cross"
+    },
+    {
+      "symbol": "JPYUSD",
+      "group": "fx_references",
+      "kind": "fx",
+      "path": "inputs/JPYUSD-daily.csv",
+      "price_column": "reference_price",
+      "sha256": "e3ee57803361db31330ec28e90cfbeac59d3c43ce5a5152ebc8583bf788931a4",
+      "bytes": 115520,
+      "original_data_path": "paper6/acquisition-2026-10-03/normalized/ecb/JPYUSD-reference.csv",
+      "source_representation": "ECB information-purpose USD reference cross"
+    },
+    {
+      "symbol": "GLD",
+      "group": "commodity_funds",
+      "kind": "fund",
+      "path": "inputs/GLD-daily.csv",
+      "price_column": "last_observed_core_close",
+      "sha256": "3d506ee3baed59acec06e11f4fb25b64b38786c94019d81ad258ec658b920a61",
+      "bytes": 124369,
+      "original_data_path": "paper6/source-quality-audit-2026-10-03/daily/GLD-core-session-provisional.csv",
+      "source_representation": "Retained HF provider archive: last observed IEX core-session endpoint; corporate-action adjustment is not independently certified",
+      "raw_archive": {
+        "data_path": "paper6/acquisition-2026-10-03/raw/hf/GLD-1min-raw.parquet",
+        "sha256": "e705599966f230f5dc236554a2738729f81e91b4b470b8e3567dbbb40c7c22f5",
+        "bytes": 33467181,
+        "retrieved_at_utc": "2026-10-02T21:28:10.105219+00:00",
+        "url": "https://api.hfdatalibrary.com/v1/bars/GLD?version=raw"
+      }
+    },
+    {
+      "symbol": "SLV",
+      "group": "commodity_funds",
+      "kind": "fund",
+      "path": "inputs/SLV-daily.csv",
+      "price_column": "last_observed_core_close",
+      "sha256": "17269508c71a8ac1a6a4d020287ceed247433ed06d26fb7b9c30a6ea4a09f77d",
+      "bytes": 122457,
+      "original_data_path": "paper6/source-quality-audit-2026-10-03/daily/SLV-core-session-provisional.csv",
+      "source_representation": "Retained HF provider archive: last observed IEX core-session endpoint; corporate-action adjustment is not independently certified",
+      "raw_archive": {
+        "data_path": "paper6/acquisition-2026-10-03/raw/hf/SLV-1min-raw.parquet",
+        "sha256": "c31fc854b32a8a2758036bc74a900122da40aa0b67d43fe2a157926de86cf38a",
+        "bytes": 26817578,
+        "retrieved_at_utc": "2026-10-02T21:28:14.319826+00:00",
+        "url": "https://api.hfdatalibrary.com/v1/bars/SLV?version=raw"
+      }
+    },
+    {
+      "symbol": "USO",
+      "group": "commodity_funds",
+      "kind": "fund",
+      "path": "inputs/USO-daily.csv",
+      "price_column": "last_observed_core_close",
+      "sha256": "be87a4b34a884142de100433ffb688460c5747fcde058aa5f6220e5b17516df3",
+      "bytes": 122373,
+      "original_data_path": "paper6/source-quality-audit-2026-10-03/daily/USO-core-session-provisional.csv",
+      "source_representation": "Retained HF provider archive: last observed IEX core-session endpoint; corporate-action adjustment is not independently certified",
+      "raw_archive": {
+        "data_path": "paper6/acquisition-2026-10-03/raw/hf/USO-1min-raw.parquet",
+        "sha256": "169b4e4d557e23f44b797a654d4bd0e42117112cb167adc56d6e1f0a45fadcc2",
+        "bytes": 27088475,
+        "retrieved_at_utc": "2026-10-02T21:28:17.603984+00:00",
+        "url": "https://api.hfdatalibrary.com/v1/bars/USO?version=raw"
+      }
+    }
+  ],
+  "fund_adjustment_limit": "The archived provider documentation describes split/dividend adjustment; the current documentation describes split-only adjustment and a revised source history. These retained archive endpoints are not certified total-return or point-in-time series. No current documentation is applied retroactively to relabel their bytes.",
+  "attribution": {
+    "hf": "Elkassabgi, A. (2026). HF Data Library. https://hfdatalibrary.com/",
+    "iex": "Data provided for free by IEX. By accessing or using IEX Historical Data, you agree to the IEX Historical Data Terms of Use. https://www.iex.io/legal/hist-data-terms",
+    "ecb": "European Central Bank euro foreign exchange reference rates. https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "binance": "Binance public market data. https://github.com/binance/binance-public-data"
+  },
+  "source_documentation": [
+    {
+      "bytes": 12936,
+      "path": "paper6/acquisition-2026-10-03/documentation/hf/methodology.html",
+      "root": "framework_data",
+      "sha256": "c9249028acd6bdc22a8923749143c7dc815e8df493a20f0ab3f1e9869516b20d"
+    },
+    {
+      "bytes": 7247,
+      "path": "paper6/acquisition-2026-10-03/documentation/hf/terms.html",
+      "root": "framework_data",
+      "sha256": "f8506e6dfdf40289e282190f894b4a4132b72bb60102054ab60e2d30edc3dcc0"
+    },
+    {
+      "bytes": 10061,
+      "path": "paper6/acquisition-2026-10-03/documentation/hf/license.html",
+      "root": "framework_data",
+      "sha256": "e056ace9c4eba04ccc6948dfe8c805bc6ef58c4b5c85b38e6e2fb8b61975e318"
+    },
+    {
+      "bytes": 85322,
+      "path": "paper6/acquisition-2026-10-03/documentation/hf/iex-terms.html",
+      "root": "framework_data",
+      "sha256": "fa819572ddad6ae4f3924055249621553f918787174df7fa18186e14e99ed58e"
+    }
+  ]
+}
