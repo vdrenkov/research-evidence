@@ -3,7 +3,3 @@ __pycache__/
 .env
 .env.*
 .venv/
-data/
-results/
-*.xlsx
-*.zip
