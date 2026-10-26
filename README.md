@@ -4,4 +4,4 @@ This repository contains study designs, experiment configurations and records ne
 
 Each study has its own folder with its design, configuration, input snapshots and verification records. Experiments use the [crypto-backtest-framework](https://github.com/vdrenkov/crypto-backtest-framework). Larger outputs are stored separately and identified in the study records.
 
-<p align="right">Valentin Drenkov, 2026</p>
+<p align="right">Valentin Drenkov, Sofia, Bulgaria, 2026</p>
